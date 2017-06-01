@@ -116,14 +116,14 @@ height:650px;
     height:100%;
 }
 .slide1{
-      background: url('jogamdo.jpg') no-repeat center center fixed; 
+      background: url('jogamdo.JPG') no-repeat center center fixed; 
  
     }
 .slide2{
-      background: url('seaview.jpg') no-repeat center center fixed; 
+      background: url('seaview.JPG') no-repeat center center fixed; 
     }
 .slide3{
-      background: url('airportview.jpg') no-repeat center center fixed; 
+      background: url('airportview.JPG') no-repeat center center fixed; 
     }
 /*slideshow based off Jonathan Snook's tutorial:
 http://snook.ca/archives/javascript/simplest-jquery-slideshow */
