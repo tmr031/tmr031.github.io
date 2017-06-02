@@ -76,7 +76,7 @@
      </nav>
 </header>
 
-	<div id = "overviewimg" style="width:100%; height:600px; background-image:url('overview.jpg');background-size: cover;" >
+	<div id = "overviewimg" style="width:100%; height:600px; background-image:url('gaeyo.jpg');background-size: cover;" >
 <div class = "headertxt" data-anijs="if: scroll, on:window, do: fadeInLeft animated, after:$fireOnce, before:scrollReveal, after: removeAnim" >
 			<p style = "font-family: 'Andale Mono', Georgia, serif;color:#fff;text-shadow: 2px 2px #0E1112;letter-spacing: 4px;font-size:2.5em;"> Sky City Tower </p>
 			<hr style = "margin-top:40px;margin-bottom:40px;" color="#ffffff" width="20%" align="center">
@@ -98,7 +98,7 @@ background: #0A2239;
 	</div>
 		<div class = "second" style = "color:#000;float:none;">
 			<div id = "overviewtxtbox" style="padding:30px 0px;line-height:25px;color:#fff;width:95%;margin-right:5%;margin-top:5%;margin-bottom:5%;">
-				<span id="overviewtxt1" style="border-right:2px solid #fff;padding-right:3%;font-weight:700;letter-spacing:2px;text-shadow: 0px 1px #0E1112;">
+				<span id="overviewtxt1" style="border-right:2px solid #fff;padding-right:3%;font-weight:700;letter-spacing:2px;text-shadow: 1px 0px #0E1112;">
 					<p>건축주</p>
 					<p>건설사</p>
 					<p>위  치</p>

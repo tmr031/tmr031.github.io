@@ -235,8 +235,8 @@ color:#fff;
 }
 
 
-.captionbox {
-  position: absolute;
+#suitepic2 .captionbox, #suitepic1 .captionbox {
+position:relative;
   top: 20px;
   left: 20px;
   right: 20px;
