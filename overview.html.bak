@@ -97,8 +97,8 @@ background: #0A2239;
 		">사업 개요</h1>
 	</div>
 		<div class = "second" style = "color:#000;float:none;">
-			<div id = "overviewtxtbox" style="padding:30px 0px;line-height:25px;color:#fff;width:90%;margin-left:5%;margin-top:5%;margin-bottom:5%;">
-				<span id="overviewtxt1" style="border-right:2px solid #fff;padding-right:3%;font-weight:700;letter-spacing:2px;text-shadow: 1px 1px #0E1112;">
+			<div id = "overviewtxtbox" style="padding:30px 0px;line-height:25px;color:#fff;width:95%;margin-right:5%;margin-top:5%;margin-bottom:5%;">
+				<span id="overviewtxt1" style="border-right:2px solid #fff;padding-right:3%;font-weight:700;letter-spacing:2px;text-shadow: 0px 1px #0E1112;">
 					<p>건축주</p>
 					<p>건설사</p>
 					<p>위  치</p>
@@ -108,7 +108,7 @@ background: #0A2239;
 					<p>층수/높이</p>
 					<p>완공예정일</p>
 				</span>
-				<span id ="overviewtxt2" style="display:inline-block;margin-left:3%;text-align:left;">
+				<span id ="overviewtxt2" style="display:inline-block;margin-left:3%;text-align:left;font-size:14px;">
 					<p>브리지임팩(주)</p>
 					<p>CJ건설(주)</p>
 					<p>인천광역시 중구 중산동 1952-3</p>
