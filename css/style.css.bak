@@ -70,7 +70,7 @@ font-family: 'Century Gothic', Georgia, serif;color:#fff;text-shadow: 2px 2px #0
 
 line-height:0px;
 
-letter-spacing: 4px;font-size:5.5vw;
+letter-spacing: 4px;font-size:3em;
 
 }
 
@@ -865,7 +865,7 @@ Mobile Size
 
 #overviewtxtbox{
 
-background-color:rgba(255,255,255,0.4); width:100%; margin:0;
+background-color:#697581; width:100%; margin:0;
 
 }
 
@@ -873,7 +873,7 @@ background-color:rgba(255,255,255,0.4); width:100%; margin:0;
 
 #overviewtxt1{
 
-display:inline-block;float:left;margin-left:10%;text-align:right
+display:inline-block;float:left;margin-left:10%;text-align:right;font-weight:500;
 
 }
 
