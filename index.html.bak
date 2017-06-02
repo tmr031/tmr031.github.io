@@ -26,7 +26,7 @@
   -o-background-size: cover;
   background-size: cover;">
 
-  <div style="width:100%;background-color:#0B2161;height:29px;display:table;">
+  <div style="width:100%;background-color:#0A2239;height:29px;display:table;">
 	
 	<div style="height:24px;display:inline-block;float:right;color:#fff;font-weight:bold;font-size:12px;
 	margin-top:2px;margin-right:1px;"><p style="padding:5px;">中國語 ></p></div>
@@ -44,7 +44,7 @@
      <div id="head-mobile"></div>
      <div class="button"></div>
          <ul>
-		 <li><a href='http://www.berkshireassociates.com/contactus'>스카이시티타워호텔&레지던스</a>
+		 <li><a href='overview.html'>스카이시티타워호텔&레지던스</a>
 			<ul>
                 <li><a href='http://www.berkshireassociates.com/besource'>사업개요</a></li>
                 <li><a href='http://www.berkshireassociates.com/berkshirepresenters'>시공사 소개</a></li>
@@ -127,7 +127,7 @@
 </div>
 
 
-<div id="suitepic1" style="background-image:url('suite.jpg')">
+<div id="suitepic1" style="background-image:url('suite.jpg')" data-anijs="if: scroll, on:window, do: slideInLeft animated, before: scrollReveal">
 
 	<figcaption class="captionbox">
     <div class="bigcaption">
@@ -150,7 +150,6 @@
 <br>LUXURY<br> SUITES
 </h1>
 	<p style ="color:#819FF7;padding:30px;text-align:center;">현관,침실,거실이 개방된 오픈 컨셉의 설계</p>
-
 </div>
 
 <div id="box2"
@@ -162,7 +161,7 @@
 </div>
 
 
-<div id="suitepic2" style="background-image:url('suite2.jpg')">
+<div id="suitepic2" style="background-image:url('suite2.jpg')" data-anijs="if: scroll, on:window, do: slideInRight animated, before: scrollReveal">
 	<figcaption class="captionbox">
 		<div class="bigcaption">
 		  <h3><span>820개의 </span>객실</h3>
@@ -295,7 +294,7 @@
 
 <hr style = "margin-top:20px;margin-left:25%;" color="#bcbcbc" width="50%" align="center">
 
-<footer style="display:inline-block; width:100%;margin-bottom:60px;">
+<footer style="display:inline-block; width:100%;">
 	<img src = "logo.png"></img>
 	<p style="margin-left:20px;font-size:80%;width:89%; margin-left:20px;top:50%; transform: translateY(-50%);position:relative; color:#6E6E6E">
 	| 시행개발 : 브릿지임팩(주) | 책임준공 : CJ건설(주)
@@ -303,11 +302,7 @@
 	분양대행사 : ㈜더감 <br>| 온라인대행 : (주)모던하이텍 | 129-81-36924 | 대표 : 김도현
 	COPYRIGHTⓒ2017 BridgeImpact Co., Ltd. All rights reserved | 문의전화 : 1588-0000</p>
 
-
- </footer>
-
-
-
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -327,7 +322,6 @@ function carousel() {
     setTimeout(carousel, 5000); // Change image every 2 seconds
 }
 
-
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -338,8 +332,6 @@ function plusDivs(n) {
 function currentDiv(n) {
   showDivs(slideIndex = n);
 }
-
-
 
 function showDivs(n) {
     var i;
@@ -352,12 +344,9 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block"; 
 }
 
-
-
 </script>
 
 <script>
-
 
 (function($) {
 $.fn.menumaker = function(options) {  
