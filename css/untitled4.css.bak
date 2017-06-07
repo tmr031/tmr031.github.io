@@ -1,6 +1,6 @@
 *{margin:0;padding:0;text-decoration:none}
 body{}
-header{position:relative;width:100%;background:#fff;}
+header{position:relative;width:100%;background:#fff;border-bottom:5px solid #bcbcbc;}
 .logo{position:relative;z-index:123;padding:10px 0 0 0;font:18px verdana;color:#000;float:left;width:15%}
 .logo a{color:#6DDB07;}
 
@@ -153,8 +153,14 @@ margin-top:0px;background-color:#EFF5FB;padding:20px;margin:50px;
 }
 
 footer img{
-margin-left:60px;padding:10px;width:10%;float:left;top:50%; display:inline-block; transform: translateY(-50%);position:relative;
+width:15%;padding: 20px 0;margin-left:10%;float:left;display:inline-block;
+color:#fff;
+}
 
+
+footer p{
+padding:20px 0;
+font-size:90%;width:25%; margin-left:8%;display:inline-block;color:#fff;line-height:160%;
 }
 
 #suitepic1{
@@ -201,12 +207,12 @@ color:#fff;
 
 
 .fa {
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
   width: 15px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 0px 5px;
   border-radius: 50%;
 }
 
@@ -429,7 +435,7 @@ ul.tabs li.active {
 
 
 	#sglogos{
-	display:table;margin-right:10%;background-color:#bcbcbc;float:right;width:80%;font-size:1.5em;
+	display:table;margin-right:10%;background-color:#bcbcbc;float:right;width:80%;font-size:1.5em;margin-top:0px;
 
 
 	}
@@ -464,17 +470,21 @@ ul.tabs li.active {
 	}
 
 	footer img{
-	width:40%;float:none;
-	margin-left:30%;
+	width:40%;
+	margin-left:30%;margin-right:30%;
 		margin-bottom:20px;display:block;
 
 	}
 
 	footer p{
-	display:block;
-	content:"hello";
+	width:80%;margin-left:10%; border-top:1px solid #bcbcbc;
+	display:block;float:none;
 		text-align:center;
-	margin-bottom:60px;
+	}
+footer div{
+	width:80%;margin-left:10%; border-top:1px solid #bcbcbc;
+	display:block;float:none;
+		text-align:center;
 	}
 
 	#suitepic1, #suitepic2{

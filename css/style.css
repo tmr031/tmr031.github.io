@@ -597,16 +597,7 @@ Guestroom Page
 
 #standard:hover{
 
-	background-image:url('standard.jpg');
-
-	transition:all 0.9s ease-in-out;
-
-	background-position:center center;
-
-	opacity:0.8;
-
-	color:#fff;
-
+	background-color:#bcbcbc;
 
 
 }
@@ -785,7 +776,7 @@ background: #ECF2FA;
 font-weight:bold;
 
 color: #444;
-
+g
 transition: all .2s ease-in-out;
 
 }

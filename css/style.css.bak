@@ -507,6 +507,9 @@ display:inline-block;
 
 float:left;
 
+color:#fff;line-height:1.5em;text-align:center;
+
+
 }
 
 .second {
@@ -782,7 +785,7 @@ background: #ECF2FA;
 font-weight:bold;
 
 color: #444;
-
+g
 transition: all .2s ease-in-out;
 
 }
