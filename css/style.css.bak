@@ -536,25 +536,6 @@ overflow: hidden;
 
 
 
-.guestbox{
-
-
-
-	height:100px;
-
-	width:100%;
-
-	font-size:2.4em; 
-
-	font-weight:bold;
-
-	display:table;
-
-
-
-}
-
-
 
 .guestbox2{
 
@@ -571,12 +552,6 @@ overflow: hidden;
 
 }
 
-
-
-
-
-
-
 .guestbox p{
 
 	text-align:center;
@@ -588,25 +563,14 @@ overflow: hidden;
 }
 
 /*
-
 Guestroom Page
 
 --------------------------------------
-
 */
 
 #standard:hover{
 
-	background-image:url('standard.jpg');
-
-	transition:all 0.9s ease-in-out;
-
-	background-position:center center;
-
-	opacity:0.8;
-
-	color:#fff;
-
+	background-color:#bcbcbc;
 
 
 }

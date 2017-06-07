@@ -82,23 +82,40 @@
 
 	<div id = "overviewimg" style="width:100%; height:600px; background-image:url('guestheader.jpg');background-size: cover;background-position:center center" >
 		<div class = "headertxt" data-anijs="if: scroll, on:window, do: fadeInLeft animated, after:$fireOnce, before:scrollReveal, after: removeAnim" >
-			<p style = "font-family: 'Andale Mono', Georgia, serif;color:#fff;text-shadow: 2px 2px #0E1112;letter-spacing: 4px;font-size:2.5em;"> Sky City Tower </p>
+			<p style = "font-family: 'Andale Mono', Georgia, serif;color:#fff;text-shadow: 2px 2px #0E1112;letter-spacing: 4px;font-size:2.5em;"> Guestrooms </p>
 			<hr style = "margin-top:40px;margin-bottom:40px;margin-left:40%;" color="#ffffff" width="20%" align="center">
-			<p id = "header"> Overview </p>
+			<p id = "header"> 객실 </p>
 		</div>
 		
 	</div>
 </div>
 
-<hr style = "margin-top:0px;" color="#bcbcbc" width="100%" align="center">
+<div class="nav">
+	<ul>
+		<li>
+		<input type="radio" id="1-option" name="selector" data-role="radio-show-hide"  data-target="sroom">
+		<label for="1-option">스탠다드 스위트</label>
+		<div class="check"></div>
+		</li>
+		  
+		<li>
+		<input type="radio" id="2-option" name="selector"data-role="radio-show-hide"  data-target="proom">
+		<label for="2-option">프리미어 스위트</label>
+			
+		<div class="check"><div class="inside"></div></div>
+		</li>
+		  
+		<li>
+		<input type="radio" id="3-option" name="selector" data-role="radio-show-hide"  data-target="croom">
+		<label for="3-option">객실 공용부</label>
+			
+		<div class="check"><div class="inside"></div></div>
+		</li>
+	<ul>
+</div>
 
-<input type="checkbox" id="chkPassport" />
 
-<label for="chkPassport" class = "guestbox" id = "standard"> <p>스탠다드 스위트</p> </label>
-
-
-
-<div id="sroom" style ="display:none;" class ="container">
+<div id="sroom" class ="container" data-role="radio-show-hide-target" data-id="sroom">
 		<div class = "desc">
 		<hr style = "margin-top:7%;position:absolute; margin-left:8%;" color="#ffffff" width="4%" align="center">
 			<h2>호텔 레지던스<br> 
@@ -107,7 +124,7 @@
 		</div>		
 		
 
-		<img style = "width:90%;margin:5%;" src ="standard.jpg"></img>
+		<div style = "width:100%;margin:5%;background-image:url('alpha.gif');background-position:center center;background-size:cover;height:500px"></div>
 
 	<div class ="one" id ="guest1">
 
@@ -145,14 +162,10 @@
 </div>
 
 
-<hr style = "margin-top:0px;" color="#bcbcbc" width="100%" align="center">
 
 
-<input type="checkbox" id="chkPremium" />
 
-<label for="chkPremium" class = "guestbox" id ="premium"> <p>프리미엄 스위트</p> </label>
-
-<div id="sroom2" class ="container" style ="display:none;">
+<div id="proom" class ="container" data-role="radio-show-hide-target" data-id="proom">
 		<div class = "desc">
 			<h2>호텔 레지던스<br> 
 			850 객실 중 400실</h2>
@@ -160,7 +173,7 @@
 		</div>		
 		<hr style = "margin-top:7%;position:absolute; margin-left:8%;" color="#ffffff" width="4%" align="center">
 
-		<img style = "width:90%;margin:5%;" src ="premium.jpg"></img>
+		<div style = "width:90%;margin:5%;background-image:url('premium.jpg');background-position:center center;background-size:cover;height:400px;"></div>
 
 	<div class ="one" id ="guest1">
 
@@ -196,14 +209,8 @@
 
 </div>
 
-<hr style = "margin-top:0px;" color="#bcbcbc" width="100%" align="center">
 
-
-<input type="checkbox" id="chkPublic" />
-
-<label for="chkPublic" class = "guestbox" id = "public"> <p>객실공용부</p> </label>
-
-<div id="sroom3" class ="container" style ="display:none;">
+<div id="croom" class ="container" data-role="radio-show-hide-target" data-id="croom">
 		<div class = "desc">
 			<h2>호텔 레지던스<br> 
 			850 객실 중 400실</h2>
@@ -307,40 +314,52 @@ text-align: center;display: block;
 
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
 <script type="text/javascript">
-    $(function () {
-       
+function customerChoice() {
+document.getElementById('1-option').checked = true;
 
-		$("#chkPremium").click(function () {
-            if ($(this).is(":checked")) {
-                $("#sroom2").show();
-            } else {
-                $("#sroom2").hide();
-				$("#chkPremium").css("background", "#fff");
-            }
-        });
-		$("#chkPassport").click(function () {
-            if ($(this).is(":checked")) {
-                $("#sroom").show();
-            } else {
-                $("#sroom").hide();
-				$("#chkPassport").css("background", "#fff");
-            }
-        });
-		$("#chkPublic").click(function () {
-            if ($(this).is(":checked")) {
-                $("#sroom3").show();
-            } else {
-                $("#sroom3").hide();
-				$("#chkPublic").css("background", "#fff");
-            }
-        });
-
-		
-    });
+}
+window.onload = customerChoice;
+$(document).ready(function() {
+$("#sroom").show();
+});
 
 </script>
 
+<script>
+$(document).ready(function() {
+			// grab the initial top offset of the navigation 
+		   	var stickyNavTop = $('.nav').offset().top;
+		   	
+		   	// our function that decides weather the navigation bar should have "fixed" css position or not.
+		   	var stickyNav = function(){
+			    var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+			         
+			    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+			    // otherwise change it back to relative
+			    if (scrollTop > stickyNavTop) { 
+			        $('.nav').addClass('sticky');
+			    } else {
+			        $('.nav').removeClass('sticky'); 
+			    }
+			};
+
+			stickyNav();
+			// and run it again every time you scroll
+			$(window).scroll(function() {
+				stickyNav();
+			});
+		});
+
+
+
+$('input[type=radio][data-role=radio-show-hide]').change(function(){
+    $('[data-role="radio-show-hide-target"]').hide();
+    var target = $(this).data('target');
+    $('[data-id='+ target +']').show();
+})
+</script>
 
 
 <script>

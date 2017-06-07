@@ -1,0 +1,738 @@
+* {
+	font-family: "Lato", sans-serif;
+}
+body {
+	margin: 0px; padding: 0px;
+}
+html {
+	-ms-overflow-x: hidden; -ms-overflow-y: scroll;
+}
+#firstSec {
+	margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; width: 100%; height: 90%;
+}
+.headertxt {
+	left: 0px; top: 15%; width: 80%; height: auto; text-align: center; right: 0px; margin-right: auto; margin-left: auto; position: absolute;
+}
+#header {
+	color: rgb(255, 255, 255); line-height: 0px; letter-spacing: 4px; font-family: "Century Gothic", Georgia, serif; font-size: 5.5vw; text-shadow: 2px 2px #0e1112;
+}
+#thirdBox {
+	padding: 0px; width: 100%; height: auto; position: relative;
+}
+#secondBox {
+	width: 100%; height: 400px; background-color: rgba(45, 135, 238, 0.5);
+}
+#first {
+	height: 100%; float: left; display: inline-block; background-color: rgb(0, 0, 0);
+}
+#second {
+	height: 100%; float: left; display: inline-block; background-color: rgb(0, 0, 0);
+}
+#third {
+	height: 100%; float: left; display: inline-block; background-color: rgb(0, 0, 0);
+}
+#first {
+	width: 34%;
+}
+#second {
+	width: 32%;
+}
+#third {
+	width: 34%;
+}
+#first #caption {
+	padding: 8% 2%; transition:0.4s ease-in-out; left: 0px; text-align: center; bottom: -210px; color: rgb(204, 204, 204); position: absolute; z-index: 2000; background-color: rgba(255, 255, 255, 0); -webkit-transition: all 0.4s ease-in-out;
+}
+#first:hover #caption {
+	bottom: 0px; background-color: rgba(0, 0, 0, 0.6);
+}
+#second:hover #caption {
+	bottom: 0px; background-color: rgba(0, 0, 0, 0.6);
+}
+#third:hover #caption {
+	bottom: 0px; background-color: rgba(0, 0, 0, 0.6);
+}
+.mySlides {
+	display: none;
+}
+.prev {
+	padding: 8px 20px; transition:0.6s; top: 50%; width: auto; color: rgb(255, 255, 255); font-size: 30px; font-weight: bold; margin-top: -22px; margin-right: 2%; margin-left: 2%; position: absolute; cursor: pointer;
+}
+.next {
+	padding: 8px 20px; transition:0.6s; top: 50%; width: auto; color: rgb(255, 255, 255); font-size: 30px; font-weight: bold; margin-top: -22px; margin-right: 2%; margin-left: 2%; position: absolute; cursor: pointer;
+}
+.next {
+	border-radius: 3px 0px 0px 3px; right: 0px;
+}
+.prev:hover {
+	color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.8);
+}
+.next:hover {
+	color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.8);
+}
+.text {
+	padding: 8px 12px; width: 100%; text-align: center; bottom: 8px; color: rgb(242, 242, 242); font-size: 15px; position: absolute;
+}
+.numbertext {
+	padding: 8px 12px; top: 0px; color: rgb(242, 242, 242); font-size: 12px; position: absolute;
+}
+.fade {
+	animation-name: fade; animation-duration: 1.5s; -webkit-animation-name: fade; -webkit-animation-duration: 1.5s;
+}
+.paragraph {
+	text-align: center;
+}
+#GuestRoom {
+	margin: 2%; width: 40%; height: 450px; float: left; display: inline-block; position: relative;
+}
+#fourthBox {
+	background: linear-gradient(to left top, rgb(0, 102, 153) 3%, rgb(102, 102, 153) 64%); width: 100%; height: 550px; text-align: center; margin-top: 20px;
+}
+#apply {
+	margin: auto; top: 0px; width: 80%; height: 400px; display: block; background-color: rgba(0, 0, 0, 0.4);
+}
+#apply h1 {
+	font-size: 40px;
+}
+#btnwrapper {
+	margin-top: 20px; margin-right: auto; margin-left: auto; display: inline-block;
+}
+.special {
+	background: rgb(255, 255, 255); margin: 5px; padding: 15px 32px; border: currentColor; transition:800ms; border-image: none; color: rgb(0, 0, 0); letter-spacing: 2px; font-weight: 700; display: inline-block; position: relative; cursor: pointer;
+}
+.special:hover {
+	background: rgb(0, 0, 0); color: rgb(255, 255, 255);
+}
+.special::before {
+	background: rgb(255, 255, 255); transition:400ms; top: 0px; width: 0px; height: 2px; right: 0px; position: absolute; content: "";
+}
+.special::after {
+	background: rgb(255, 255, 255); transition:400ms; top: 0px; width: 0px; height: 2px; right: 0px; position: absolute; content: "";
+}
+.special::after {
+	left: 0px; top: inherit; right: inherit; bottom: 0px;
+}
+.special:hover::before {
+	transition:800ms; width: 100%;
+}
+.special:hover::after {
+	transition:800ms; width: 100%;
+}
+footer {
+	height: 150px; background-color: rgb(255, 255, 255);
+}
+.mySlides {
+	width: 100%; height: 100%;
+}
+#overviewbox:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+.designbox {
+	width: 100%; height: auto; text-align: center; overflow: hidden; background-color: rgb(135, 193, 196);
+}
+#btn2:hover {
+	background: rgb(63, 108, 190) !important; transition:0.5s ease-in-out;
+}
+.dropmenu .icon {
+	display: none;
+}
+.one {
+	width: 40%; margin-left: 5%; float: left; display: inline-block;
+}
+.two {
+	width: 40%; margin-left: 5%; display: inline-block;
+}
+.first {
+	width: 50%; float: left; display: inline-block;
+}
+.second {
+	width: 50%; float: right; display: inline-block;
+}
+.container {
+	margin: 0px; padding: 0px; width: 100%; overflow: hidden; position: relative;
+}
+.guestbox {
+	width: 100%; height: 100px; font-size: 2.4em; font-weight: bold; display: table;
+}
+.guestbox2 {
+	width: 100%; height: 30%; margin-top: 5%; display: table;
+}
+.guestbox p {
+	text-align: center; color: rgb(0, 0, 0); line-height: 100px;
+}
+#standard:hover {
+	background-position: center; transition:0.9s ease-in-out; color: rgb(255, 255, 255); opacity: 0.8; background-image: url("standard.jpg");
+}
+#premium:hover {
+	background-position: center; transition:0.9s ease-in-out; color: rgb(255, 255, 255); opacity: 0.8; background-image: url("premium.jpg");
+}
+#public:hover {
+	background-position: center; transition:0.9s ease-in-out; color: rgb(255, 255, 255); opacity: 0.8; background-image: url("lobby.jpg");
+}
+:checked#chkPassport + label {
+	background-position: center; color: rgb(255, 255, 255); background-image: url("standard.jpg");
+}
+:checked#chkPassport + label p {
+	color: rgb(255, 255, 255);
+}
+:checked#chkPremium + label {
+	background-position: center; color: rgb(255, 255, 255); background-image: url("premium.jpg");
+}
+:checked#chkPremium + label p {
+	color: rgb(255, 255, 255);
+}
+:checked#chkPublic + label {
+	background-position: center; color: rgb(255, 255, 255); background-image: url("lobby.jpg");
+}
+:checked#chkPublic + label p {
+	color: rgb(255, 255, 255);
+}
+.guestbox:hover p {
+	color: rgb(255, 255, 255);
+}
+input[type='checkbox'] {
+	display: none;
+}
+.list-type2 {
+	margin: 0px auto; width: 100%;
+}
+.list-type2 ol {
+	list-style: none; padding: 0px; font-family: "Raleway", sans-serif; font-size: 15px; margin-bottom: 1.2em; counter-reset: li;
+}
+.list-type2 ol ol {
+	margin: 0px 0px 0px 1em;
+}
+.list-type2 ol li {
+	background: rgb(236, 242, 250); margin: 0.3em 0px; padding: 0.4em 0.4em 0.4em 2em; transition:0.2s ease-in-out; color: rgb(68, 68, 68); font-size: 13px; font-weight: bold; display: block; position: relative;
+}
+.list-type2 li:hover {
+	background: rgb(255, 255, 255); text-decoration: none; transform: scale(1.1);
+}
+#guest1 {
+	width: 30%; z-index: 1000; background-color: rgb(236, 242, 250);
+}
+#guest2 {
+	width: 49%; margin-top: -30px; margin-left: 5%;
+}
+.title {
+	margin: 5%; padding: 3%; color: rgb(255, 255, 255); position: absolute; background-color: rgb(19, 62, 110);
+}
+.desc {
+	margin: 5%; padding: 3%; color: rgb(255, 255, 255); position: absolute; background-color: rgb(19, 62, 110);
+}
+#overviewtxtbox {
+	margin: 0px; width: 100%; background-color: rgba(255, 255, 255, 0.4);
+}
+#overviewtxt1 {
+	text-align: right; margin-left: 10%; float: left; display: inline-block;
+}
+@media only screen and (max-width:530px)
+{
+#thirdBox h1 {
+	display: none;
+}
+}
+body {
+	font-family: "Josefin Slab", serif;
+}
+.effects {
+	margin: 0px; padding: 0px; width: 100%;
+}
+#example1 {
+	margin-left: 0.5%;
+}
+.example {
+	margin: auto; width: 33%; height: 100%; display: inline-block;
+}
+figure.snip0016 {
+	text-align: left; color: rgb(255, 255, 255); overflow: hidden; font-family: "Raleway", Arial, sans-serif; float: left; position: relative;
+}
+figure.snip0016 * {
+	box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+figure.snip0016 figcaption {
+	padding: 30px 3em; left: 0px; width: 100%; height: 100%; bottom: 0px; position: absolute;
+}
+figure.snip0016 figcaption::before {
+	transition:0.5s 0.6s; left: 100%; top: 30px; right: 30px; bottom: 30px; border-left-color: rgba(255, 255, 255, 0.8); border-left-width: 4px; border-left-style: solid; position: absolute; content: ""; opacity: 0; background-color: rgba(255, 255, 255, 0.5); -webkit-transition: all 0.5s; -webkit-transition-delay: 0.6s;
+}
+figure.snip0016 h2 {
+	margin: 0px 0px 5px; transition:opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s; opacity: 0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+}
+figure.snip0016 p {
+	margin: 0px 0px 5px; transition:opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s; opacity: 0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+}
+figure.snip0016 h2 {
+	text-transform: uppercase; font-weight: 300; word-spacing: -0.15em; transform: translate3d(30%, 0%, 0px); transition-delay: 0.3s; -webkit-transition-delay: 0.3s; -webkit-transform: translate3d(30%, 0%, 0);
+}
+figure.snip0016 h2 span {
+	font-weight: 800;
+}
+figure.snip0016 p {
+	font-weight: 200; transform: translate3d(0%, 30%, 0px); transition-delay: 0s; -webkit-transition-delay: 0s; -webkit-transform: translate3d(0%, 30%, 0);
+}
+figure.snip0016 a {
+	left: 0px; top: 0px; right: 0px; bottom: 0px; color: rgb(255, 255, 255); position: absolute;
+}
+figure.snip0016:hover figcaption {
+	background: rgba(0, 0, 0, 0.6);
+}
+figure.snip0016:hover h1 {
+	opacity: 0;
+}
+figure.snip0016:hover figcaption h2 {
+	opacity: 1; transform: translate3d(0%, 0%, 0px); transition-delay: 0.4s; -webkit-transition-delay: 0.4s; -webkit-transform: translate3d(0%, 0%, 0);
+}
+figure.snip0016:hover figcaption p {
+	opacity: 0.9; transform: translate3d(0%, 0%, 0px); transition-delay: 0.6s; -webkit-transition-delay: 0.6s; -webkit-transform: translate3d(0%, 0%, 0);
+}
+figure.snip0016:hover figcaption::before {
+	background: rgba(255, 255, 255, 0); left: 30px; opacity: 1; transition-delay: 0s; -webkit-transition-delay: 0s;
+}
+.nav input[type='radio'] {
+	display: none;
+}
+.nav input[type=radio]:checked ~ .check {
+	
+}
+.nav input[type=radio]:checked ~ .check::before {
+	background: rgb(13, 255, 146);
+}
+.nav input[type=radio]:checked ~ label {
+	background: linear-gradient(to left top, rgb(0, 102, 153) 3%, rgb(102, 102, 153) 64%); color: rgb(255, 255, 255); font-weight: bold;
+}
+.nav {
+	padding: 5px; text-align: center; background-color: rgba(255, 255, 255, 0.7);
+}
+.nav ul {
+	margin: 0px; padding: 0px;
+}
+ul li input[type=radio] {
+	visibility: hidden; position: absolute;
+}
+.nav ul li {
+	border: 2px solid rgb(0, 0, 0); border-image: none; width: 15%; text-align: center; color: rgb(0, 0, 0); font-family: roboto; font-size: 16px; text-decoration: none; display: inline-block; background-color: rgb(255, 255, 255);
+}
+.nav ul li label {
+	padding: 10px; display: block; position: relative; z-index: 9; cursor: pointer; -webkit-transition: all 0.25s linear;
+}
+*[data-role='radio-show-hide-target'] {
+	display: none;
+}
+.sticky {
+	left: 0px; top: 0px; width: 100%; border-top-color: currentColor; border-top-width: 0px; border-top-style: none; position: fixed; z-index: 100;
+}
+.vehiclesort2 {
+	width: 100%; height: 30%;
+}
+.vehiclesort2 a:link {
+	padding: 10px; width: 15%; height: 39px; text-align: center; line-height: 39px; font-family: roboto; font-size: 16px; text-decoration: none; margin-bottom: 3px; display: inline-block; background-color: rgba(255, 255, 255, 0.7);
+}
+.vehiclesort2 a:visited {
+	background-color: rgb(0, 0, 0);
+}
+.vehiclesort2 a:hover {
+	background: linear-gradient(rgb(51, 51, 51), rgb(68, 68, 68)) rgb(51, 51, 51);
+}
+.vehiclesort2 a:active {
+	color: rgb(255, 255, 255);
+}
+body {
+	
+}
+a {
+	text-decoration: none;
+}
+.slideshow {
+	width: 100%; height: 600px; text-align: center; position: relative;
+}
+.active {
+	opacity: 1;
+}
+.miyazaki {
+	background: rgb(51, 51, 51); border-radius: 5px; width: 80%; color: rgb(255, 255, 255); font-family: Agenda-Light, sans-serif; font-size: 1.5vw; font-weight: 100; margin-left: 10%; border-collapse: collapse; text-rendering: optimizeLegibility;
+}
+.miyazaki caption {
+	margin: 1rem; color: rgb(68, 68, 68);
+}
+tablehead {
+	margin: 1rem; color: rgb(68, 68, 68);
+}
+.miyazaki th {
+	width: 50px;
+}
+.miyazaki thead th {
+	font-weight: 600;
+}
+.miyazaki thead th {
+	padding: 0.8rem; border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.miyazaki tbody td {
+	padding: 0.8rem; border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.miyazaki tbody td {
+	background: rgb(238, 238, 238); padding: 0.8rem; color: rgb(68, 68, 68);
+}
+.miyazaki tbody tr:not(:last-child) {
+	border-top-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+#openPopupOne {
+	display: none;
+}
+@media screen and (max-width:600px)
+{
+.miyazaki {
+	border: 5px solid rgb(0, 0, 0); border-image: none; width: 130px; font-size: 18px; float: left; display: none;
+}
+#openPopupOne {
+	display: block;
+}
+}
+@media only screen and (max-width:900px)
+{
+#overviewtxtbox {
+	margin: 0px; width: 100%; display: block; background-color: rgb(255, 255, 255);
+}
+.one {
+	width: 100%; margin-left: 0px; float: none; display: block;
+}
+.two {
+	width: 100%; margin-left: 0px; float: none; display: block;
+}
+.first {
+	width: 100%; margin-left: 0px; float: none; display: block;
+}
+.second {
+	width: 100%; margin-left: 0px; float: none; display: block;
+}
+#guest1 {
+	width: 100%; margin-left: 0px; float: none; display: block;
+}
+#guest2 {
+	width: 100%; margin-left: 0px; float: none; display: block;
+}
+#overviewbox {
+	left: 50%; top: 50%; clear: both;
+}
+#overviewbox {
+	width: 80%; clear: both; margin-right: auto; margin-left: auto; -ms-zoom: 1;
+}
+#first {
+	margin: 0px; width: 100%; float: none; display: block;
+}
+#second {
+	margin: 0px; width: 100%; float: none; display: block;
+}
+#third {
+	margin: 0px; width: 100%; float: none; display: block;
+}
+#GuestRoom {
+	margin: 0px; width: 100%; float: none; display: block;
+}
+.title {
+	width: 80%; margin-left: 10%; position: relative;
+}
+.effects {
+	display: block;
+}
+#example1 {
+	margin: 0px; width: 100%; height: 400px; display: block;
+}
+#example2 {
+	margin: 0px; width: 100%; height: 400px; display: block;
+}
+#example3 {
+	margin: 0px; width: 100%; height: 400px; display: block;
+}
+.desc {
+	background-color: transparent;
+}
+.title {
+	background-color: transparent;
+}
+}
+.buttonbox {
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.buttonbox::after {
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.buttonbox::before {
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.buttonbox {
+	background: rgb(0, 102, 153); font-family: "PT Sans", sans-serif; display: table;
+}
+.buttonbox button a {
+	color: rgb(255, 255, 255);
+}
+.buttonbox {
+	height: auto; text-align: center; vertical-align: middle; display: table-cell;
+}
+.buttonbox button {
+	background: rgba(0, 0, 0, 0.2); margin: 20px 30px; border: currentColor; border-image: none; color: rgb(255, 255, 255); font-size: 18px; display: inline-block; position: relative; cursor: pointer;
+}
+.buttonbox span {
+	padding: 25px 80px; display: block;
+}
+.buttonbox button::before {
+	background: rgb(255, 255, 255); transition:0.2s linear; width: 0px; height: 2px; position: absolute; content: "";
+}
+.buttonbox button::after {
+	background: rgb(255, 255, 255); transition:0.2s linear; width: 0px; height: 2px; position: absolute; content: "";
+}
+.buttonbox span::before {
+	background: rgb(255, 255, 255); transition:0.2s linear; width: 2px; height: 0px; position: absolute; content: "";
+}
+.buttonbox span::after {
+	background: rgb(255, 255, 255); transition:0.2s linear; width: 2px; height: 0px; position: absolute; content: "";
+}
+.buttonbox button:hover::before {
+	width: 100%;
+}
+.buttonbox button:hover::after {
+	width: 100%;
+}
+.buttonbox button:hover span::before {
+	height: 100%;
+}
+button:hover span::after {
+	height: 100%;
+}
+.btn-1::before {
+	transition-delay: 0.2s;
+}
+.btn-1::after {
+	transition-delay: 0.2s;
+}
+.btn-1 span::before {
+	transition-delay: 0s;
+}
+.btn-1 span::after {
+	transition-delay: 0s;
+}
+.btn-1::before {
+	top: 0px; right: 0px;
+}
+.btn-1::after {
+	left: 0px; bottom: 0px;
+}
+.btn-1 span::before {
+	left: 0px; top: 0px;
+}
+.btn-1 span::after {
+	right: 0px; bottom: 0px;
+}
+.btn-1:hover::before {
+	transition-delay: 0s;
+}
+.btn-1:hover::after {
+	transition-delay: 0s;
+}
+.btn-1:hover span::before {
+	transition-delay: 0.2s;
+}
+.btn-1:hover span::after {
+	transition-delay: 0.2s;
+}
+.popupbox {
+	padding: 20px; text-align: center;
+}
+.overlay {
+	background: rgba(0, 0, 0, 0.6); left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: fixed; z-index: 9998;
+}
+.popup {
+	width: 100%; height: 100%; text-align: center; display: none; position: fixed; z-index: 9999; -ms-overflow-y: auto; box-shadow: 1px 1px 4px rgba(0,0,0,0.2), -1px 0px 4px rgba(0,0,0,0.2);
+}
+.one.popup {
+	transition:0.7s cubic-bezier(0.845, -0.265, 0.19, 1.28); left: 0px; top: 0px; opacity: 0; transform: scale(0); -webkit-transform: scale(0);
+}
+.oneOpen.popup {
+	opacity: 1; transform: scale(1); -webkit-transform: scale(1);
+}
+.popuptb {
+	border: 2px solid rgb(255, 255, 255); border-image: none; width: 35%; font-family: Agenda-Light, sans-serif; margin-top: 20px; margin-left: 10%; float: left; border-collapse: collapse; background-color: rgb(238, 238, 238);
+}
+.popuptb tr:first-child {
+	color: rgb(255, 255, 255); background-color: rgb(51, 51, 51);
+}
+.popuptb thead th {
+	padding: 0.8rem; border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+.popuptb tbody td {
+	padding: 0.8rem; border: 1px solid rgb(221, 221, 221); border-image: none;
+}
+#floorhead {
+	width: 100%; height: 40px; text-align: center; color: rgb(0, 0, 0); padding-top: 5px; font-size: 25px; font-weight: bold; box-shadow: inset 0px 0px 0px 5px #000; background-color: rgb(255, 255, 255);
+}
+.view {
+	padding: 5px; color: rgb(255, 255, 255); font-size: 15px; margin-top: 0px;
+}
+#secondTable tr:first-child {
+	color: rgb(0, 0, 0); background-color: rgb(238, 238, 238);
+}
+.cd-popup {
+	transition:opacity 0.3s, visibility 0s 0.3s; left: 0px; top: 0px; width: 100%; height: 100%; visibility: hidden; position: fixed; z-index: 10000; opacity: 0; background-color: rgba(94, 110, 141, 0.9); -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s; -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+.is-visible.cd-popup {
+	transition:opacity 0.3s, visibility; visibility: visible; opacity: 1; -webkit-transition: opacity 0.3s 0s, visibility 0s 0s; -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.img-replace {
+	color: transparent; text-indent: 100%; overflow: hidden; display: inline-block; white-space: nowrap;
+}
+.cd-popup-container {
+	background: rgb(255, 255, 255); margin: 4em auto; border-radius: 0.25em 0.25em 0.4em 0.4em; width: 100%; height: 300px; text-align: center; position: relative; max-width: 400px; box-shadow: 0px 0px 20px rgba(0,0,0,0.2); transform: translateY(-40px); transition-property: transform; transition-duration: 0.3s; -webkit-transform: translateY(-40px); -moz-transform: translateY(-40px); -o-transform: translateY(-40px); -webkit-backface-visibility: hidden; -webkit-transition-property: -webkit-transform; -moz-transition-property: -moz-transform; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s;
+}
+.cd-popup-container p {
+	padding: 0px 30px;
+}
+.cd-popup-container .cd-buttons::after {
+	clear: both; display: table; content: "";
+}
+.cd-popup-container .cd-buttons li {
+	list-style: none; width: 50%; float: left;
+}
+.cd-popup-container .cd-buttons a {
+	transition:background-color 0.2s; height: 60px; color: rgb(255, 255, 255); text-transform: uppercase; line-height: 60px; display: block; -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s;
+}
+.cd-popup-container .cd-buttons li:first-child a {
+	background: rgb(252, 113, 105); border-radius: 0px 0px 0px 0.25em;
+}
+.no-touch .cd-popup-container .cd-buttons li:first-child a:hover {
+	background-color: rgb(252, 137, 130);
+}
+.cd-popup-container .cd-buttons li:last-child a {
+	background: rgb(182, 190, 206); border-radius: 0px 0px 0.25em;
+}
+.no-touch .cd-popup-container .cd-buttons li:last-child a:hover {
+	background-color: rgb(197, 204, 216);
+}
+.cd-popup-container .cd-popup-close {
+	top: 8px; width: 30px; height: 30px; right: 8px; position: absolute;
+}
+.cd-popup-container .cd-popup-close::before {
+	top: 12px; width: 14px; height: 3px; position: absolute; content: ""; background-color: rgb(143, 156, 181);
+}
+.cd-popup-container .cd-popup-close::after {
+	top: 12px; width: 14px; height: 3px; position: absolute; content: ""; background-color: rgb(143, 156, 181);
+}
+.cd-popup-container .cd-popup-close::before {
+	left: 8px; transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg);
+}
+.cd-popup-container .cd-popup-close::after {
+	right: 8px; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg);
+}
+.is-visible .cd-popup-container {
+	transform: translateY(0px); -webkit-transform: translateY(0); -moz-transform: translateY(0); -o-transform: translateY(0);
+}
+@media only screen and (min-width:1170px)
+{
+.cd-popup-container {
+	margin: 8em auto;
+}
+}
+#popupbtns li a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#btns {
+	left: 0px; width: 100%; height: 20%; bottom: 0px; display: none; z-index: 9999; background-color: rgb(0, 0, 0);
+}
+#formContainer {
+	
+}
+#formHeader h3 {
+	margin: 0px; padding: 0.4em; text-align: center; font-size: 2.4em; font-weight: 300; opacity: 0.8;
+}
+#formBody {
+	font-size: 1.15em; font-weight: 300;
+}
+.rf_notice {
+	text-align: center; font-size: 0.8em;
+}
+.FlowupLabels .fl_label {
+	cursor: text;
+}
+.rf_submit {
+	background: none; margin: auto; padding: 5px 25px; border-radius: 4px; border: 1px dotted rgb(61, 213, 133); border-image: none; color: rgb(61, 213, 133); font-size: 18px; display: block;
+}
+.rf_submit:hover {
+	background: rgb(61, 213, 133); color: rgb(85, 85, 85); cursor: pointer;
+}
+.rf_submit:focus {
+	border: 1px solid rgb(61, 213, 133); border-image: none;
+}
+#miscInfo {
+	left: 15px; bottom: 10px; color: rgb(153, 153, 153); font-size: 12px; position: fixed;
+}
+#miscInfo a {
+	color: rgb(153, 153, 153);
+}
+#ghBanner {
+	border: 0px currentColor; border-image: none; top: 0px; right: 0px; position: absolute;
+}
+.FlowupLabels .fl_wrap {
+	margin: 12px auto; width: 500px; height: 46px; display: block; position: relative; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.FlowupLabels .fl_label {
+	left: 5px; top: 15px; position: absolute; z-index: 3; transform: translate3d(0px, 0px, 0px); -webkit-transition: all .08s ease; -webkit-transform: translate3d(0, 0, 0); -moz-transition: all .08s ease; -moz-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); -transition: all .08s ease;
+}
+.FlowupLabels .fl_input {
+	background: none; border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor rgb(85, 85, 85); padding: 20px 0px 0px 5px; border-radius: 0px; border-image: none; left: 0px; top: 0px; width: 100%; right: 0px; bottom: 0px; line-height: 22px; font-size: 16px; position: absolute; z-index: 2; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.FlowupLabels .focused.fl_wrap .fl_label {
+	color: rgb(85, 85, 85); font-size: 12px; transform: translate(0px, -12px); -webkit-transform: translate(0, -12px); -moz-transform: translate(0, -12px); -o-transform: translate(0, -12px);
+}
+.FlowupLabels .populated.fl_wrap .fl_label {
+	color: rgb(85, 85, 85); font-size: 12px; transform: translate(0px, -12px); -webkit-transform: translate(0, -12px); -moz-transform: translate(0, -12px); -o-transform: translate(0, -12px);
+}
+.FlowupLabels .focused.fl_wrap .fl_label {
+	color: rgb(0, 163, 77);
+}
+.agree {
+	margin: 40px auto 40px 35%; width: 30%; height: auto; display: block; position: relative;
+}
+.agree ul {
+	list-style: none; margin: 0px; padding: 0px; overflow: auto;
+}
+.agree ul li {
+	width: 50%; height: 100px; color: rgb(82, 82, 82); float: left; display: inline-block; position: relative;
+}
+.agree ul li input[type=radio] {
+	visibility: hidden; position: absolute;
+}
+.agree ul li label {
+	margin: 10px auto; padding: 25px 25px 25px 80px; height: 30px; font-size: 1.35em; font-weight: 300; display: block; position: relative; z-index: 9; cursor: pointer; -webkit-transition: all 0.25s linear;
+}
+.agree ul li:hover label {
+	color: rgb(188, 188, 188);
+}
+.agree ul li .check {
+	border-radius: 100%; border: 5px solid rgb(82, 82, 82); transition:border 0.25s linear; border-image: none; left: 20px; top: 30px; width: 25px; height: 25px; display: block; position: absolute; z-index: 5; -webkit-transition: border .25s linear;
+}
+.agree ul li:hover .check {
+	border: 5px solid rgb(188, 188, 188); border-image: none;
+}
+.agree ul li .check::before {
+	margin: auto; border-radius: 100%; transition:background 0.25s linear; left: 5px; top: 5px; width: 15px; height: 15px; display: block; position: absolute; content: ""; -webkit-transition: background 0.25s linear;
+}
+.agree input[type=radio]:checked ~ .check {
+	border: 5px solid rgb(0, 0, 0); border-image: none;
+}
+.agree input[type=radio]:checked ~ .check::before {
+	background: rgb(0, 0, 0);
+}
+.agree input[type=radio]:checked ~ label {
+	color: rgb(0, 0, 0);
+}
+.alert {
+	padding: 20px 40px; left: 0px; top: 0px; width: 100%; color: white; position: relative; z-index: 300; box-sizing: border-box; background-color: rgb(21, 21, 21);
+}
+.alert h2 {
+	color: white; font-size: 25px; margin-top: 0px;
+}
+.alert p {
+	line-height: 1.6em; font-size: 18px;
+}
+.alert a {
+	color: rgb(13, 255, 146);
+}
