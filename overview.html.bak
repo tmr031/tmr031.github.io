@@ -32,7 +32,7 @@
 		 <img src='call.png' style ="height:30px;width:30px;top:0;bottom:0;margin:auto;">
 		 </img>
 	    </div>
-     <div class="logo"><a href="http://www.berkshireassociates.com/"><img src="logo.png" style="width:auto;height:30px;"></a></div>
+     <div class="logo"><a href="index.html"><img src="logo.png" style="width:auto;height:30px;"></a></div>
      <div id="head-mobile"></div>
      <div class="button"></div>
          <ul>
@@ -90,9 +90,14 @@
 background: #0A2239;height:300px;
 "data-anijs="if: click, do: pulse animated">
 	<div class = "first" style="text-align:center;">
-
-		<h1 style ="color:#61C6EC;display: inline-block;border:3px solid #61C6EC;padding:10px;
-		width:60%;height:80%;margin-top:5%;">사업 개요</h1>
+<div style="
+  border: 1px solid #61C6EC;
+  padding: 10px; margin:30px auto;
+  width: 50%;margin-left:25%;
+ 
+  box-shadow: 5px 5px 0 #0A2239 inset, -5px -5px 0 #0A2239 inset,6px 6px 0  #61C6EC inset, -6px -6px 0  #61C6EC inset;">
+  <h1 style="padding:20px;text-align:center;color: #61C6EC;font-family: 'Lato', Georgia, serif;font-size:20px;">사업개요</h1>
+  </div>
 	</div>
 		<div class = "second" style = "color:#000;float:none;">
 			<div id = "overviewtxtbox">
@@ -167,20 +172,29 @@ Bio/사료/제분 산업플랜트 수행으로 글로벌 사업 역량을 다져
 	</div>
 
 
-<h1 data-anijs="if: scroll, on:window, do: fadeInLeft animated, after:$fireOnce, before:scrollReveal, after: removeAnim" style="border-top:2px solid #000;border-bottom:2px solid #000;margin:20px 0; padding:10px 0;text-align:center"
-><span>오시는 길</span></h1>
 
-<div class="container" style = "height:auto;    
+	<div style="
+  border: 1px solid #394EAE;
+  padding: 10px;
+  width: 220px;
+  margin:60px auto;
+  box-shadow: 5px 5px 0 #fff inset, -5px -5px 0 #fff inset,6px 6px 0  #394EAE inset, -6px -6px 0  #394EAE inset;">
+  <h1 style="padding:20px;text-align:center;color: #394EAE;font-family: 'Lato', Georgia, serif;font-size:20px;">오시는길</h1>
+  
+
+</div>
+
+
+<div class="container" id="map" style = "height:auto;    
 background: linear-gradient(to top, #ffccff 3%, #ccccff 64%);">
 
   <ul class="tabs">
   <li class="active" rel="tab1">승용차</li>
   <li rel="tab2">버스</li>
   <li rel="tab3">지하철</li>
-  <li rel="tab4">공항버스</li>
 </ul>
 <div class="tab_container">
-  <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+  <h3 class="d_active tab_drawer_heading" rel="tab1">승용차</h3>
   <div id="tab1" class="tab_content">
   <div class = "first">
 		
@@ -200,12 +214,12 @@ background: linear-gradient(to top, #ffccff 3%, #ccccff 64%);">
 
   </div>
   <!-- #tab1 -->
-  <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
+  <h3 class="tab_drawer_heading" rel="tab2">버스</h3>
   <div id="tab2" class="tab_content">
   <div class = "first">
 		
 		<img src ="bus.png" style="width:100%;margin-top:10%;"></img>
-		
+		<br>
 		</div>		
 
 		<div class = "second">
@@ -219,12 +233,12 @@ background: linear-gradient(to top, #ffccff 3%, #ccccff 64%);">
 		</div>
   </div>
   <!-- #tab2 -->
-  <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
+  <h3 class="tab_drawer_heading" rel="tab3">지하철</h3>
   <div id="tab3" class="tab_content">
   <div class = "first">
 		
 		<img src ="subway.png" style="width:100%;margin-top:10%;"></img>
-		
+		<br>
 		</div>		
 
 		<div class = "second">
@@ -238,12 +252,7 @@ background: linear-gradient(to top, #ffccff 3%, #ccccff 64%);">
 		</div>
   </div>
   <!-- #tab3 -->
-  <h3 class="tab_drawer_heading" rel="tab4">Tab 4</h3>
-  <div id="tab4" class="tab_content">
-  <h2>Tab 4 content</h2>
-    <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
-  </div>
-  <!-- #tab4 --> 
+  
 </div>
 <!-- .tab_container -->
 </div>
@@ -252,28 +261,60 @@ background: linear-gradient(to top, #ffccff 3%, #ccccff 64%);">
 
 		
 	</div>
-<div style="margin-top:60px;left:0;right:0;margin-left:auto;margin-right:auto;text-align: center;">
-<!-- Add font awesome icons -->
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-instagram"></a>
-</div>
 
-<hr style = "margin-top:20px;margin-left:25%;" color="#bcbcbc" width="50%" align="center">
-
-<footer style="display:inline-block; width:100%">
+
+
+
+<footer style="display:inline-block; width:100%; background-color:#0A2239;height:auto;">
 	<img src = "logo.png"></img>
-	<p style="margin-left:20px;font-size:80%;width:89%; margin-left:20px;top:50%; transform: translateY(-50%);position:relative; color:#6E6E6E">
-	| 시행개발 : 브릿지임팩(주) | 책임준공 : CJ건설(주)
-	우리은행 110-04-110769  예금주 : 무궁화신탁(주)
-	분양대행사 : ㈜더감 <br>| 온라인대행 : (주)모던하이텍 | 129-81-36924 | 대표 : 김도현
-	COPYRIGHTⓒ2017 BridgeImpact Co., Ltd. All rights reserved | 문의전화 : 1588-0000</p>
+	<p>
+	Contact<br>
+	
+	p : (02) 4040 5943<br>
+	m : 010 6353 8935<br>
+	e : info@skycitytower.com
 
+	
 
- </footer>
+	
+	
+	</p>
 
+	<p>
+	Address<br>
+	
+	인천광역시 중구 중산동 1952-3<br>
+	<br>
+	<button style ="color:#fff;text-decoration:none;border:1px solid #fff;padding:0px 5px;background-color:#0A2239;">네이버 지도 보기</button>
 
+	
+
+	
+	
+	</p>
+
+	
+<div style="left:0;right:0;margin-left:auto;margin-right:auto;text-align: center;">
+	<!-- Add font awesome icons -->
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-google"></a>
+	<a href="#" class="fa fa-instagram"></a>
+	</div>
+	<p style="font-size:90%;margin-left:10%;text-align:center;margin-top:30px;width:80%;color:#fff;line-height:160%;padding-bottom:20px;border-top:1px solid #bcbcbc;">
+	
+	시행개발 : 브릿지임팩(주)
+	책임준공 : CJ건설<br>
+	우리은행 110-04-110769  예금주 : 무궁화신탁(주)<br>
+	분양대행사 : ㈜더감 | 
+	온라인대행 : (주)모던하이텍 | 129-81-36924 | 대표 : 김도현
+	
+
+	
+	
+	</p>
+
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 

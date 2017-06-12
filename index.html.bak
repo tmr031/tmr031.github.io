@@ -46,16 +46,16 @@
          <ul>
 		 <li><a href='overview.html'>스카이시티타워호텔&레지던스</a>
 			<ul>
-                <li><a href='http://www.berkshireassociates.com/besource'>사업개요</a></li>
-                <li><a href='http://www.berkshireassociates.com/berkshirepresenters'>시공사 소개</a></li>
-                <li><a href='http://www.berkshireassociates.com/berkshirepresenters'>오시는 길</a></li>
+                <li><a href='overview.html#overviewbox'>사업개요</a></li>
+                <li><a href='overview.html#sglogos'>시공사 소개</a></li>
+                <li><a href='overview.html#map'>오시는 길</a></li>
 
             </ul>  
 			
 		</li>
 
 		<li><a href='design.html'>디자인</a></li>
-		<li><a href='http://www.berkshireassociates.com/besource'>객실정보</a>
+		<li><a href='guestroom.html'>객실정보</a>
 			<ul>
 			 <li><a href='http://www.berkshireassociates.com/besource'>스탠다드 스위트</a></li>
 			 <li><a href='http://www.berkshireassociates.com/berkshirepresenters'>프리미어 스위트</a></li>
@@ -63,8 +63,8 @@
 
 			</ul>  
         </li>
-		<li><a href='https://works.baiworks.com/default.aspx'>시설정보</a></li>
-		<li><a href='https://berkshirecustomercommunity.force.com/Customers/login'>분양정보</a></li>
+		<li><a href='facility.html'>시설정보</a></li>
+		<li><a href='info.html'>분양정보</a></li>
         <li><a href='http://www.berkshireassociates.com/shop/myitems.aspx'>견적/분양신청</a>
 			<ul>
 				<li><a href='http://www.berkshireassociates.com/about-us#founder'>견적문의</a></li>
@@ -129,7 +129,7 @@
 
 <div id="suitepic1" style="background-image:url('suite.jpg')" data-anijs="if: scroll, on:window, do: slideInLeft animated, before: scrollReveal">
 
-	<figcaption class="captionbox">
+	<figcaption class="captionbox" style="margin-top:30px">
     <div class="bigcaption">
       <h3>Luxury <span> Suites</span></h3>
     </div>
@@ -162,7 +162,7 @@
 
 
 <div id="suitepic2" style="background-image:url('suite2.jpg')" data-anijs="if: scroll, on:window, do: slideInRight animated, before: scrollReveal">
-	<figcaption class="captionbox">
+	<figcaption class="captionbox" style="margin-top:30px">
 		<div class="bigcaption">
 		  <h3><span>820개의 </span>객실</h3>
 		</div>
