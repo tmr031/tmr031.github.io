@@ -103,19 +103,19 @@
 <div>
 
 
+  <div style="width:60%;height:60px;margin:0 20%;
+  border:2px solid #fff;background-color:rgba(0,0,0,0.5);margin-top:-70px;display:block;
+  z-index:1000;">
+  <p style="text-align:center;color:#fff;font-size:20px;padding:15px;">Designed By CJ 건설</p>
+
+  </div>
 <div style = "width:100%;height:auto;
-background-color: #0A2239;margin:0;"
+background-color: #0A2239;margin:0;outline: 2px solid #fff;
+    outline-offset: -10px;"
 data-anijs="if: click, do: pulse animated">
 	<br>
-	<div style="margin:60px auto;
-	  border: 1px solid #61C6EC;
-	  padding: 10px;
-	  width: 250px;
 
-	  box-shadow: 5px 5px 0 #0A2239 inset, -5px -5px 0 #0A2239 inset,6px 6px 0  #61C6EC inset, -6px -6px 0  #61C6EC inset;">
-	  <h1 style="padding:20px;text-align:center;color: #61C6EC;font-family: 'Lato', Georgia, serif;font-size:20px;">Designed By CJ 건설</h1>
-	</div>
-	<p id = "headingtxt" style="padding-bottom:60px; color:#fff;">
+	<p id = "headingtxt" style="padding:30px; color:#fff;">
 	세계로 뻗어가는 글로벌 호텔로서 전세계 어디에서나 한결같이 품격있는
 	서비스와 시설로 고객에게 깊은 감동을 주는 브랜드를 지향하고 있습니다.
 
@@ -140,20 +140,22 @@ data-anijs="if: click, do: pulse animated">
 	<h1 style="color:#fff;text-shadow: 0 0 5px rgba(0,0,0,0.5);font-weight:800;">
 	<br>LUXURY DESIGN
 	</h1><h4 style="color:#61C6EC">현관,침실,거실이 개방된 오픈 컨셉의 설계</h4>
-	<p id ="headingtxt" style="color:#819FF7;text-align:center;"> 고객 맞춤 개조가 가능한 29,264평방미터 규모 행사장을 갖춘 하얏트 리젠시 올랜도에서는 5,069평방미터의 리젠시 볼룸, 2,501평방미터의 플라자 인터내셔널 볼룸, 주니어 볼룸 2개 등 기둥 없는 개별 볼룸 5개와 미팅룸 105실을 이용할 수 있습니다. 또한, 아늑한 분위기의 수영장 시설, 가든 테라스와 유명한 오키드 룸, 자연광과 우아한 장식 및 호화로운 조경의 베란다로 잘 알려진 실내/야외 이벤트 공간 등 결혼식과 축하연을 위한 실내/외 행사장이 있습니다. </p>
+	<p id ="headingtxt" style="color:#819FF7;text-align:center;font-size:11px;"> 고객 맞춤 개조가 가능한 29,264평방미터 규모 행사장을 갖춘 하얏트 리젠시 올랜도에서는 5,069평방미터의 리젠시 볼룸, 2,501평방미터의 플라자 인터내셔널 볼룸, 주니어 볼룸 2개 등 기둥 없는 개별 볼룸 5개와 미팅룸 105실을 이용할 수 있습니다. 또한, 아늑한 분위기의 수영장 시설, 가든 테라스와 유명한 오키드 룸, 자연광과 우아한 장식 및 호화로운 조경의 베란다로 잘 알려진 실내/야외 이벤트 공간 등 결혼식과 축하연을 위한 실내/외 행사장이 있습니다. </p>
 
 </div>
 
 
 <div id = "designjpg" data-anijs="if: scroll, on:window, do: fadeInUp animated, after:$fireOnce, before:scrollReveal, after: removeAnim" style = "background-image:url('designn.jpg');
 background-position:center center; background-size:cover;width:100%;height:600px;text-align:center;">
-	<div style="background-color:#fff; width:200px;padding:30px;position: relative;margin-left: auto;
-  margin-right: auto;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);">EXTERIOR DESIGN
+<div style="background-color:rgba(255,255,255,0.3);width:280px;height:90px;position: relative;margin-left: auto;
+margin-right: auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);">
+	<div style="background-color:#fff; margin:10px;width:200px;padding:30px;font-weight:600;">EXTERIOR DESIGN
 	</div>
+</div>
 </div>
 
 
@@ -286,7 +288,7 @@ background-position:center center; background-size:cover;width:100%;height:600px
 
 <script>
 (function($) {
-$.fn.menumaker = function(options) {  
+$.fn.menumaker = function(options) {
  var cssmenu = $(this), settings = $.extend({
    format: "dropdown",
    sticky: false
@@ -295,7 +297,7 @@ $.fn.menumaker = function(options) {
    $(this).find(".button").on('click', function(){
      $(this).toggleClass('menu-opened');
      var mainmenu = $(this).next('ul');
-     if (mainmenu.hasClass('open')) { 
+     if (mainmenu.hasClass('open')) {
        mainmenu.slideToggle().removeClass('open');
      }
      else {
@@ -343,19 +345,19 @@ $("#cssmenu").menumaker({
 });
 })(jQuery);
 $(document).ready(function() {
-			// grab the initial top offset of the navigation 
+			// grab the initial top offset of the navigation
 		   	var stickyNavTop = $('header').offset().top;
-		   	
+
 		   	// our function that decides weather the navigation bar should have "fixed" css position or not.
 		   	var stickyNav = function(){
 			    var scrollTop = $(window).scrollTop(); // our current vertical position from the top
-			         
+
 			    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
 			    // otherwise change it back to relative
-			    if (scrollTop > stickyNavTop) { 
+			    if (scrollTop > stickyNavTop) {
 			        $('header').addClass('sticky');
 			    } else {
-			        $('header').removeClass('sticky'); 
+			        $('header').removeClass('sticky');
 			    }
 			};
 			stickyNav();

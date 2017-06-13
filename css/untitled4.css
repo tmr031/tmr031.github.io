@@ -402,7 +402,7 @@ ul.tabs li {
 	position: relative;
 }
 
-.tab_last { border-right: 1px solid #333; }
+.tab_last { border-right: 1px solid #333;}
 
 ul.tabs li:hover {
 	background-color: #ccc;
@@ -410,8 +410,8 @@ ul.tabs li:hover {
 }
 
 ul.tabs li.active {
-	background-color: #0B2161;
-	color: #fff;
+	background-color: #fff;
+	color: #000;
 	display: block;
 }
 
@@ -432,7 +432,7 @@ ul.tabs li.active {
 
 }
 
-.tab_content img{border: 1px solid #000;}
+.tab_content img{border: 1px solid #eee;}
 .tab_drawer_heading { display: none; }
 
 
@@ -510,7 +510,8 @@ ul#night_option li {
 }
 
 ul#night_option li:hover {
-  background-color: #3a3f49;
+  background-color: #fff;
+	color:#000;
 }
 
 
@@ -556,6 +557,33 @@ background: linear-gradient(to top left, #006699 3%, #666699 64%);
 
 }
 
+h1 {
+  text-align: center;
+	overflow: hidden;
+
+	span {
+		display: inline-block;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: "";
+			border-bottom: 2px solid $headingColor;
+			width: 3em;
+			margin: 0 1.5em;
+			position: absolute;
+			bottom: .5em;
+		}
+
+		&:before {
+			right: 100%;
+		}
+
+		&:after {
+			left: 100%;
+		}
+	}
+}
 
 @media screen and (max-width:700px){
 .nav{display:none;}#nights{display: flex;
