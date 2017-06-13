@@ -235,86 +235,76 @@ Value Chain을 확장하여, 자산 가치를 극대화하는 ‘건설기반 �
   </div>
 
 
-<div class="container" id="map" style = "height:auto;">
+  <div class="tabs">
+    <div class="tabs-header">
+      <div class="border"></div>
+      <ul>
+        <li class="active"><a href="#tab-1" tab-id="1" ripple="ripple" ripple-color="#FFF">승용차</a></li>
+        <li><a href="#tab-2" tab-id="2" ripple="ripple" ripple-color="#FFF">지하철</a></li>
+        <li><a href="#tab-3" tab-id="3" ripple="ripple" ripple-color="#FFF">버스</a></li>
 
+      </ul>
+      <nav class="tabs-nav mobile">
+        <i class="material-icons" id="prev" ripple="ripple" ripple-color="#FFF">&#xE314;</i>
+        <i class="material-icons" id="next" ripple="ripple" ripple-color="#FFF">&#xE315;</i>
+      </nav>
+    </div>
+    <div class="tabs-content">
+      <div class="tab active" tab-id="1">
+        <div class = "first">
 
-  <ul class="tabs">
-  <li class="active" rel="tab1">승용차</li>
-  <li rel="tab2">버스</li>
-  <li rel="tab3">지하철</li>
-</ul>
-<div class="tab_container">
-  <h3 class="d_active tab_drawer_heading" rel="tab1">승용차</h3>
-  <div id="tab1" class="tab_content">
-  <div class = "first">
+          <img src ="car.png" style="width:100%;margin-top:10%;"></img>
 
-		<img src ="car.png" style="width:100%;margin-top:10%;"></img>
+          </div>
 
-		</div>
+          <div class = "second">
 
-		<div class = "second">
+            <br></br>
 
-			<br></br>
+            <p style="padding:40px;color:#000;line-height:1.5em;text-align:center">삼성역 5, 6번 출구와 직접 연결된 통로로 진입, 밀레니엄 광장을 통하여 스타필드 코엑스몰로 진입</p>
 
-			<p style="padding:40px;color:#000;line-height:1.5em;text-align:center">삼성역 5, 6번 출구와 직접 연결된 통로로 진입, 밀레니엄 광장을 통하여 스타필드 코엑스몰로 진입</p>
+        <button style="margin-top:30px;width:40%;margin-left:30%;padding:10px 20px;border:2px solid #000;background-color:#fff;font-size:12px;margin-bottom:40px;"> 네이버 지도</button>
 
-	<button style="margin-top:30px;width:40%;margin-left:30%;padding:10px 20px;border:2px solid #000;background-color:#fff;font-size:12px;margin-bottom:40px;"> 네이버 지도</button>
+          </div>
 
-		</div>
+        </div>
+      <div class="tab" tab-id="2">
+        <div class = "first">
 
+          <img src ="subway.png" style="width:100%;margin-top:10%;"></img>
+          <br>
+          </div>
+
+          <div class = "second">
+
+            <br></br>
+
+            <p style="padding:40px;color:#000;line-height:1.5em;text-align:center">삼성역 5, 6번 출구와 직접 연결된 통로로 진입, 밀레니엄 광장을 통하여 스타필드 코엑스몰로 진입</p>
+
+        <button style="margin-top:30px;width:40%;margin-left:30%;padding:10px 20px;border:2px solid #000;background-color:#fff;font-size:12px;margin-bottom:40px;"> 네이버 지도</button>
+
+          </div>
+
+      </div>
+      <div class="tab" tab-id="3">
+
+        <div class = "first">
+
+      		<img src ="bus.png" style="width:100%;margin-top:10%;"></img>
+      		<br>
+      		</div>
+
+      		<div class = "second">
+
+      			<br></br>
+
+      			<p style="padding:40px;color:#000;line-height:1.5em;text-align:center">삼성역 5, 6번 출구와 직접 연결된 통로로 진입, 밀레니엄 광장을 통하여 스타필드 코엑스몰로 진입</p>
+
+      	<button style="margin-top:30px;width:40%;margin-left:30%;padding:10px 20px;border:2px solid #000;background-color:#fff;font-size:12px;margin-bottom:40px;"> 네이버 지도</button>
+
+      		</div>
   </div>
-  <!-- #tab1 -->
-  <h3 class="tab_drawer_heading" rel="tab2">버스</h3>
-  <div id="tab2" class="tab_content">
-  <div class = "first">
-
-		<img src ="bus.png" style="width:100%;margin-top:10%;"></img>
-		<br>
-		</div>
-
-		<div class = "second">
-
-			<br></br>
-
-			<p style="padding:40px;color:#000;line-height:1.5em;text-align:center">삼성역 5, 6번 출구와 직접 연결된 통로로 진입, 밀레니엄 광장을 통하여 스타필드 코엑스몰로 진입</p>
-
-	<button style="margin-top:30px;width:40%;margin-left:30%;padding:10px 20px;border:2px solid #000;background-color:#fff;font-size:12px;margin-bottom:40px;"> 네이버 지도</button>
-
-		</div>
-  </div>
-  <!-- #tab2 -->
-  <h3 class="tab_drawer_heading" rel="tab3">지하철</h3>
-  <div id="tab3" class="tab_content">
-  <div class = "first">
-
-		<img src ="subway.png" style="width:100%;margin-top:10%;"></img>
-		<br>
-		</div>
-
-		<div class = "second">
-
-			<br></br>
-
-			<p style="padding:40px;color:#000;line-height:1.5em;text-align:center">삼성역 5, 6번 출구와 직접 연결된 통로로 진입, 밀레니엄 광장을 통하여 스타필드 코엑스몰로 진입</p>
-
-	<button style="margin-top:30px;width:40%;margin-left:30%;padding:10px 20px;border:2px solid #000;background-color:#fff;font-size:12px;margin-bottom:40px;"> 네이버 지도</button>
-
-		</div>
-  </div>
-  <!-- #tab3 -->
-
 </div>
-<!-- .tab_container -->
-</div>
-
-
-
-
-
-
-	</div>
-
-
 
 
 
@@ -453,51 +443,172 @@ $(document).ready(function() {
 		});
 </script>
 <script>
- // tabbed content
-    // http://www.entheosweb.com/tutorials/css/tabs.asp
-    $(".tab_content").hide();
-    $(".tab_content:first").show();
+$(document).ready(function () {
 
-  /* if in tab mode */
-    $("ul.tabs li").click(function() {
+  // Intial Border Position
+  var activePos = $('.tabs-header .active').position();
 
-      $(".tab_content").hide();
-      var activeTab = $(this).attr("rel");
-      $("#"+activeTab).fadeIn();
+  // Change Position
+  function changePos() {
 
-      $("ul.tabs li").removeClass("active");
-      $(this).addClass("active");
+    // Update Position
+    activePos = $('.tabs-header .active').position();
 
-	  $(".tab_drawer_heading").removeClass("d_active");
-	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
-
+    // Change Position & Width
+    $('.border').stop().css({
+      left: activePos.left,
+      width: $('.tabs-header .active').width()
     });
-	/* if in drawer mode */
-	$(".tab_drawer_heading").click(function() {
+  }
 
-      $(".tab_content").hide();
-      var d_activeTab = $(this).attr("rel");
-      $("#"+d_activeTab).fadeIn();
+  changePos();
 
-	  $(".tab_drawer_heading").removeClass("d_active");
-      $(this).addClass("d_active");
+  // Intial Tab Height
+  var tabHeight = $('.tab.active').height();
 
-	  $("ul.tabs li").removeClass("active");
-	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+  // Animate Tab Height
+  function animateTabHeight() {
+
+    // Update Tab Height
+    tabHeight = $('.tab.active').height();
+
+    // Animate Height
+    $('.tabs-content').stop().css({
+      height: tabHeight + 'px'
     });
+  }
 
+  animateTabHeight();
 
-	/* Extra class "tab_last"
-	   to add border to right side
-	   of last tab */
-	$('ul.tabs li').last().addClass("tab_last");
+  // Change Tab
+  function changeTab() {
+    var getTabId = $('.tabs-header .active a').attr('tab-id');
 
+    // Remove Active State
+    $('.tab').stop().fadeOut(300, function () {
+      // Remove Class
+      $(this).removeClass('active');
+    }).hide();
+
+    $('.tab[tab-id=' + getTabId + ']').stop().fadeIn(300, function () {
+      // Add Class
+      $(this).addClass('active');
+
+      // Animate Height
+      animateTabHeight();
+    });
+  }
+
+  // Tabs
+  $('.tabs-header a').on('click', function (e) {
+    e.preventDefault();
+
+    // Tab Id
+    var tabId = $(this).attr('tab-id');
+
+    // Remove Active State
+    $('.tabs-header a').stop().parent().removeClass('active');
+
+    // Add Active State
+    $(this).stop().parent().addClass('active');
+
+    changePos();
+
+    // Update Current Itm
+    tabCurrentItem = tabItems.filter('.active');
+
+    // Remove Active State
+    $('.tab').stop().fadeOut(300, function () {
+      // Remove Class
+      $(this).removeClass('active');
+    }).hide();
+
+    // Add Active State
+    $('.tab[tab-id="' + tabId + '"]').stop().fadeIn(300, function () {
+      // Add Class
+      $(this).addClass('active');
+
+      // Animate Height
+      animateTabHeight();
+    });
+  });
+
+  // Tab Items
+  var tabItems = $('.tabs-header ul li');
+
+  // Tab Current Item
+  var tabCurrentItem = tabItems.filter('.active');
+
+  // Next Button
+  $('#next').on('click', function (e) {
+    e.preventDefault();
+
+    var nextItem = tabCurrentItem.next();
+
+    tabCurrentItem.removeClass('active');
+
+    if (nextItem.length) {
+      tabCurrentItem = nextItem.addClass('active');
+    } else {
+      tabCurrentItem = tabItems.first().addClass('active');
+    }
+
+    changePos();
+    changeTab();
+  });
+
+  // Prev Button
+  $('#prev').on('click', function (e) {
+    e.preventDefault();
+
+    var prevItem = tabCurrentItem.prev();
+
+    tabCurrentItem.removeClass('active');
+
+    if (prevItem.length) {
+      tabCurrentItem = prevItem.addClass('active');
+    } else {
+      tabCurrentItem = tabItems.last().addClass('active');
+    }
+
+    changePos();
+    changeTab();
+  });
+
+  // Ripple
+  $('[ripple]').on('click', function (e) {
+    var rippleDiv = $('<div class="ripple" />'),
+      rippleOffset = $(this).offset(),
+      rippleY = e.pageY - rippleOffset.top,
+      rippleX = e.pageX - rippleOffset.left,
+      ripple = $('.ripple');
+
+    rippleDiv.css({
+      top: rippleY - (ripple.height() / 2),
+      left: rippleX - (ripple.width() / 2),
+      background: $(this).attr("ripple-color")
+    }).appendTo($(this));
+
+    window.setTimeout(function () {
+      rippleDiv.remove();
+    }, 1500);
+  });
+});
+
+(function() {
+  var button, buttonStyles, materialIcons;
+
+  materialIcons = '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">';
+
+  button = '<a href="http://monoplustudio.id/" class="at-button"><i class="material-icons">link</i></a>';
+
+  document.body.innerHTML += materialIcons + button;
+
+}).call(this);
 </script>
 
 
 <script src="http://anijs.github.io/lib/anijs/anijs-min.js"></script>
-
-
 
   <!-- Include to use $addClass, $toggleClass or $removeClass -->
 

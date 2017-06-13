@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style>
+  html {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    background: -webkit-linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);
+    background: linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  [ripple] {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  [ripple] .ripple {
+    position: absolute;
+    background: #FFFFFF;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    -webkit-animation: ripple 1.6s;
+            animation: ripple 1.6s;
+  }
+
+  @-webkit-keyframes ripple {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 0.2;
+    }
+    100% {
+      -webkit-transform: scale(40);
+              transform: scale(40);
+      opacity: 0;
+    }
+  }
+
+  @keyframes ripple {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 0.2;
+    }
+    100% {
+      -webkit-transform: scale(40);
+              transform: scale(40);
+      opacity: 0;
+    }
+  }
+  .tabs {
+    z-index: 15px;
+    position: relative;
+    background: #FFFFFF;
+    width: 90%;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 50px auto 10px;
+    overflow: hidden;
+
+  }
+  .tabs-header {
+    position: relative;
+    /*background: #4285F4;*/
+    overflow: hidden;
+
+  }
+  .tabs-header .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #F4B142;
+    width: auto;
+    height: 2px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .tabs-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+  .tabs-header li {
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    margin-right:10px;
+  }
+  .tabs-header li .active {
+    background:#4285F4;
+  }
+  .tabs-header a {
+    z-index: 1;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    color: #4285F4;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    background:#fff;
+    border:1px solid #4285F4;
+  }
+
+  .tabs-nav.dekstop, .tabs-nav.mobile {display:none;}
+
+  .tabs-content {
+    position: relative;
+    padding: 15px 20px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    overflow: hidden;
+  }
+  .tabs-content:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    box-shadow: 0 0 20px 10px #FFFFFF;
+  }
+  .tabs-content .tab {
+    display: none;
+  }
+  .tabs-content .tab.active {
+    display: block;
+
+  }
+
+  .pen-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+    margin: 20px auto 100px;
+  }
+  .pen-footer a {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+  .pen-footer a .material-icons {
+    width: 12px;
+    margin: 0 5px;
+    vertical-align: middle;
+    font-size: 12px;
+  }
+
+  .cp-fab {
+    background: #FFFFFF !important;
+    color: #4285F4 !important;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .tabs-nav.mobile {display:block;}
+    .tabs-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #4285F4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    padding: 0 10px;
+    color: #FFFFFF;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    z-index:9;
+  }
+  .tabs-nav:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 0 0 20px 10px #4285F4;
+  }
+    .tabs-nav i {
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  }
+
+
+  .at-button {
+    z-index: 10000000;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    background: #FFF;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    color: #666;
+    -webkit-animation: at-ripple 0.6s linear infinite;
+            animation: at-ripple 0.6s linear infinite;
+  }
+  .at-button:hover i {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  .at-button i {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+
+  @-webkit-keyframes at-ripple {
+    0% {
+      box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1), 0 0 0 0 rgba(102, 102, 102, 0.1), 0 0 0 5px rgba(102, 102, 102, 0.1), 0 0 0 10px rgba(102, 102, 102, 0.1);
+    }
+    100% {
+      box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1), 0 0 0 5px rgba(102, 102, 102, 0.1), 0 0 0 10px rgba(102, 102, 102, 0.1), 0 0 0 20px rgba(102, 102, 102, 0);
+    }
+  }
+
+  @keyframes at-ripple {
+    0% {
+      box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1), 0 0 0 0 rgba(102, 102, 102, 0.1), 0 0 0 5px rgba(102, 102, 102, 0.1), 0 0 0 10px rgba(102, 102, 102, 0.1);
+    }
+    100% {
+      box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1), 0 0 0 5px rgba(102, 102, 102, 0.1), 0 0 0 10px rgba(102, 102, 102, 0.1), 0 0 0 20px rgba(102, 102, 102, 0);
+    }
+  }
+
+  </style>
+  <title>Document</title>
+ </head>
+
+ <body>
+
+<div class="tabs">
+  <div class="tabs-header">
+    <div class="border"></div>
+    <ul>
+      <li class="active"><a href="#tab-1" tab-id="1" ripple="ripple" ripple-color="#FFF">Comedy</a></li>
+      <li><a href="#tab-2" tab-id="2" ripple="ripple" ripple-color="#FFF">Horror</a></li>
+      <li><a href="#tab-3" tab-id="3" ripple="ripple" ripple-color="#FFF">Kids</a></li>
+      <li><a href="#tab-4" tab-id="4" ripple="ripple" ripple-color="#FFF">Drama</a></li>
+      <li><a href="#tab-5" tab-id="5" ripple="ripple" ripple-color="#FFF">Lifestyle</a></li>
+      <li><a href="#tab-6" tab-id="6" ripple="ripple" ripple-color="#FFF">Movie</a></li>
+    </ul>
+    <nav class="tabs-nav mobile">
+      <i class="material-icons" id="prev" ripple="ripple" ripple-color="#FFF">&#xE314;</i>
+      <i class="material-icons" id="next" ripple="ripple" ripple-color="#FFF">&#xE315;</i>
+    </nav>
+  </div>
+  <div class="tabs-content">
+    <div class="tab active" tab-id="1">1. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Ellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor.</div>
+    <div class="tab" tab-id="2">2. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam.</div>
+    <div class="tab" tab-id="3">3. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor.</div>
+    <div class="tab" tab-id="4">4. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Aenean lacinia bibendum nulla sed consectetur.</div>
+    <div class="tab" tab-id="5">5. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor.Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
+    <div class="tab" tab-id="6">6. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Curabitur blandit tempus porttitor.Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
+  </div>
+</div>
+<div class="pen-footer">
+  <a href="https://dribbble.com/tisonmuhammad" target="_blank"><i class="material-icons">arrow_backward</i>View on Dribbble</a>
+  <a href="https://github.com/tisonmuhammad/" target="_blank">View on Github<i class="material-icons">arrow_forward</i></a></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function () {
+
+    // Intial Border Position
+    var activePos = $('.tabs-header .active').position();
+
+    // Change Position
+    function changePos() {
+
+      // Update Position
+      activePos = $('.tabs-header .active').position();
+
+      // Change Position & Width
+      $('.border').stop().css({
+        left: activePos.left,
+        width: $('.tabs-header .active').width()
+      });
+    }
+
+    changePos();
+
+    // Intial Tab Height
+    var tabHeight = $('.tab.active').height();
+
+    // Animate Tab Height
+    function animateTabHeight() {
+
+      // Update Tab Height
+      tabHeight = $('.tab.active').height();
+
+      // Animate Height
+      $('.tabs-content').stop().css({
+        height: tabHeight + 'px'
+      });
+    }
+
+    animateTabHeight();
+
+    // Change Tab
+    function changeTab() {
+      var getTabId = $('.tabs-header .active a').attr('tab-id');
+
+      // Remove Active State
+      $('.tab').stop().fadeOut(300, function () {
+        // Remove Class
+        $(this).removeClass('active');
+      }).hide();
+
+      $('.tab[tab-id=' + getTabId + ']').stop().fadeIn(300, function () {
+        // Add Class
+        $(this).addClass('active');
+
+        // Animate Height
+        animateTabHeight();
+      });
+    }
+
+    // Tabs
+    $('.tabs-header a').on('click', function (e) {
+      e.preventDefault();
+
+      // Tab Id
+      var tabId = $(this).attr('tab-id');
+
+      // Remove Active State
+      $('.tabs-header a').stop().parent().removeClass('active');
+
+      // Add Active State
+      $(this).stop().parent().addClass('active');
+
+      changePos();
+
+      // Update Current Itm
+      tabCurrentItem = tabItems.filter('.active');
+
+      // Remove Active State
+      $('.tab').stop().fadeOut(300, function () {
+        // Remove Class
+        $(this).removeClass('active');
+      }).hide();
+
+      // Add Active State
+      $('.tab[tab-id="' + tabId + '"]').stop().fadeIn(300, function () {
+        // Add Class
+        $(this).addClass('active');
+
+        // Animate Height
+        animateTabHeight();
+      });
+    });
+
+    // Tab Items
+    var tabItems = $('.tabs-header ul li');
+
+    // Tab Current Item
+    var tabCurrentItem = tabItems.filter('.active');
+
+    // Next Button
+    $('#next').on('click', function (e) {
+      e.preventDefault();
+
+      var nextItem = tabCurrentItem.next();
+
+      tabCurrentItem.removeClass('active');
+
+      if (nextItem.length) {
+        tabCurrentItem = nextItem.addClass('active');
+      } else {
+        tabCurrentItem = tabItems.first().addClass('active');
+      }
+
+      changePos();
+      changeTab();
+    });
+
+    // Prev Button
+    $('#prev').on('click', function (e) {
+      e.preventDefault();
+
+      var prevItem = tabCurrentItem.prev();
+
+      tabCurrentItem.removeClass('active');
+
+      if (prevItem.length) {
+        tabCurrentItem = prevItem.addClass('active');
+      } else {
+        tabCurrentItem = tabItems.last().addClass('active');
+      }
+
+      changePos();
+      changeTab();
+    });
+
+    // Ripple
+    $('[ripple]').on('click', function (e) {
+      var rippleDiv = $('<div class="ripple" />'),
+        rippleOffset = $(this).offset(),
+        rippleY = e.pageY - rippleOffset.top,
+        rippleX = e.pageX - rippleOffset.left,
+        ripple = $('.ripple');
+
+      rippleDiv.css({
+        top: rippleY - (ripple.height() / 2),
+        left: rippleX - (ripple.width() / 2),
+        background: $(this).attr("ripple-color")
+      }).appendTo($(this));
+
+      window.setTimeout(function () {
+        rippleDiv.remove();
+      }, 1500);
+    });
+  });
+
+  (function() {
+    var button, buttonStyles, materialIcons;
+
+    materialIcons = '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">';
+
+    button = '<a href="http://monoplustudio.id/" class="at-button"><i class="material-icons">link</i></a>';
+
+    document.body.innerHTML += materialIcons + button;
+
+  }).call(this);
+
+  </script>
+
+  </body>
+  </html>
