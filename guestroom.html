@@ -471,6 +471,15 @@ $(document).ready(function() {
 				stickyNav();
 			});
 		});
+
+
+    $('input[type=radio][data-role=radio-show-hide]').change(function(){
+        $('[data-role="radio-show-hide-target"]').hide();
+        var target = $(this).data('target');
+        $('[data-id='+ target +']').show();
+    })
+
+
 </script>
 
   <!-- Include to use $addClass, $toggleClass or $removeClass -->
@@ -478,9 +487,6 @@ $(document).ready(function() {
 <script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
 
 <script src="http://anijs.github.io/lib/anijs/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
-
-
-
 
 
 <script src="http://anijs.github.io/lib/anijs/anijs-min.js"></script>

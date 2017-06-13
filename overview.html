@@ -20,7 +20,6 @@
 
   <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Document</title>
@@ -203,18 +202,16 @@ Value Chain을 확장하여, 자산 가치를 극대화하는 ‘건설기반 �
 
 <div class = "container">
 
-  <div class="first" style="background-image:url('airportview.JPG');
-  background-position:center center;height:600px;
-  background-size:cover;">
+      <div class="first" style="background-image:url('airportview.JPG');
+      background-position:center center;height:600px;
+      background-size:cover;">
 
 
 
   			<p style="color:#fff;line-height:25px;font-size:11px;padding:5%;border:2px solid #fff;
         width:80%;margin-left:5%;top:5%;">이 칸은 나중에 호텔 디자인이 완성되었을 때 디자인의 특징이나 장점을 써주는 칸Designed by Pritzker Prize winning architect Christian de Portzamparc and consisting of 81 fashionable condominiums, 400 Park Avenue South has changed the face of NoMad and altered the Manhattan skyline. 400 Park Avenue south isn't just another building. It is a living work of art. It is glass. It is steel. It is couture. It is a thoughtful collection of materials. And it has changed the way people see ManhattanDesigned.</p>
 
-
-
-</div>
+      </div>
 
 
 
@@ -369,7 +366,7 @@ border-top:2px solid #000; border-bottom:2px solid #000;margin:50px 30%;width:40
 
 <script>
 (function($) {
-$.fn.menumaker = function(options) {  
+$.fn.menumaker = function(options) {
  var cssmenu = $(this), settings = $.extend({
    format: "dropdown",
    sticky: false
@@ -378,7 +375,7 @@ $.fn.menumaker = function(options) {
    $(this).find(".button").on('click', function(){
      $(this).toggleClass('menu-opened');
      var mainmenu = $(this).next('ul');
-     if (mainmenu.hasClass('open')) { 
+     if (mainmenu.hasClass('open')) {
        mainmenu.slideToggle().removeClass('open');
      }
      else {
@@ -426,19 +423,19 @@ $("#cssmenu").menumaker({
 });
 })(jQuery);
 $(document).ready(function() {
-			// grab the initial top offset of the navigation 
+			// grab the initial top offset of the navigation
 		   	var stickyNavTop = $('header').offset().top;
-		   	
+
 		   	// our function that decides weather the navigation bar should have "fixed" css position or not.
 		   	var stickyNav = function(){
 			    var scrollTop = $(window).scrollTop(); // our current vertical position from the top
-			         
+
 			    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
 			    // otherwise change it back to relative
-			    if (scrollTop > stickyNavTop) { 
+			    if (scrollTop > stickyNavTop) {
 			        $('header').addClass('sticky');
 			    } else {
-			        $('header').removeClass('sticky'); 
+			        $('header').removeClass('sticky');
 			    }
 			};
 			stickyNav();
