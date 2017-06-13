@@ -211,7 +211,7 @@ http-equiv="X-UA-Compatible">
 
 </DIV></div>
 <DIV id="F2" data-role="radio-show-hide-target" data-id="F2">
-<DIV class="container" id="sroom" style="margin-top: 10%;">
+<DIV class="container" id="sroom">
 
   <div class = "desc">
 
@@ -250,7 +250,7 @@ http-equiv="X-UA-Compatible">
 </DIV></div>
 
 <DIV id="F3" data-role="radio-show-hide-target" data-id="F3">
-<DIV class="container" id="sroom" style="margin-top: 10%;">
+<DIV class="container" id="sroom">
   <div class = "desc">
 
     <h2>디자이너 부띠크 쇼핑몰</h2>
@@ -378,7 +378,12 @@ http-equiv="X-UA-Compatible">
 <script>
 $(document).ready(function() {
 $("#F1").show();
+$("#1-option").prop("checked", true)
+
+
 });
+
+
 $('#nights').click(function(){
  $('#night_option').toggle();
 })
