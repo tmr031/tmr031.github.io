@@ -473,23 +473,6 @@ $(document).ready(function() {
 
 
 
-$('input[type=radio][data-role=radio-show-hide]').change(function(){
-    $('[data-role="radio-show-hide-target"]').hide();
-    var target = $(this).data('target');
-    $('[data-id='+ target +']').show();
-})
-
- $('#nights').click(function(){
-	$('#night_option').toggle();
-})
-
-$('.option').click(function(){
-	$('.select_text').html($(this).attr('id'));
-	$('#nightselect option[value='+$(this).attr('id')+']').prop('selected', true);
-	$('#night_option').toggle();
-})
-
-
 </script>
 
 
