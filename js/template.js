@@ -6,18 +6,12 @@ var Promise = TrelloPowerUp.Promise;
 var boardButtonCallback = function(t){
   return t.popup({
     title: "Time Statistics",
-    url: './totalStatistics.html',
-    height: 101
+    url: './mindmap.html',
+    height: 700
   });
 };
 
-var cardButtonCallback = function(t){
-  return t.popup({
-    title: "Time Tracker",
-    url: './timeTracker.html',
-    height: 80
-  });
-};
+
 
 var getBadge = function(t){
 	var timerText = '';
