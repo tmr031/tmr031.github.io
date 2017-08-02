@@ -19,7 +19,22 @@ var cardButtonCallback = function(t){
     height: 300
   });
 };
+var openOverlay = function (t, opts) {
+  return t.overlay({
+    url: './mindmap.html',
+    args: { rand: (Math.random() * 100).toFixed(0) } // optional args to pass
+  });
+};
 
+window.TrelloPowerUp.initialize({
+  'board-buttons': function (t, opts) {
+    return [{
+      icon: './images/icon.svg',
+      text: 'Open Overlay',
+      callback: openOverlay
+    }];
+  }
+});
 
 
 TrelloPowerUp.initialize({
@@ -27,7 +42,7 @@ TrelloPowerUp.initialize({
 		return [{
 			icon: WHITE_ICON,
 			text: "Time Statistics",
-			callback: boardButtonCallback
+			callback: openOverlay
 		}];
 	},
 	'card-buttons': function(t, options) {
