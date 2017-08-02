@@ -3,40 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-TrelloPowerUp.initialize({
-  'card-buttons': function(t, options)
-    return [{
-      icon: 'https://cdn.glitch.com/1b42d7fe-bda8-4af8-a6c8-eff0cea9e08a%2Frocket-ship.png?1494946700421',
-      text: 'Estimate Size',
-      callback: function(t)
-        return t.popup(
-          title: "Estimation",
-          url: 'estimate.html'
-        });
-      }
-    }];
-  }
-});
-
+/* global TrelloPowerUp */
+var Promise = TrelloPowerUp.Promise;
 var t = TrelloPowerUp.iframe();
 
-window.estimate.addEventListener('submit', function(event){
-  event.preventDefault();
-  return t.set('card', 'shared', 'estimate', window.estimateSize.value)
-  .then(function(){
-    t.closePopup();
-  });
-});
+
+
+/* timer setup */
 
 t.render(function(){
-  return t.get('card', 'shared', 'estimate')
-  .then(function(estimate){
-    window.estimateSize.value = estimate;
+  return Promise.all([
+    
+  ])
+  .spread(function(boardTimeTotal, rate){
+
+   
+
   })
   .then(function(){
-    t.sizeTo('#estimate').done();
-  });
+    t.sizeTo('#content')
+    .done();
+  })
 });
+
 (function($) {
     var rootDiv = '';
     var treeGround = null;
