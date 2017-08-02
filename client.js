@@ -6,40 +6,13 @@ var Promise = TrelloPowerUp.Promise;
 var boardButtonCallback = function(t){
   return t.popup({
     title: "Time Statistics",
-    url: 'mindmap.html',
+    url: './mindmap.html',
     height: 700
   });
 };
 
 
 
-var getBadge = function(t){
-	var timerText = '';
-	var color = null;
-	var icon = GRAY_ICON;
-
-	Promise.all([
-		t.get('card', 'private', 'timer_started')
-	])
-	.spread(function(time) {
-		if(time != null) {
-			timerText = 'Timer is on';
-			color = 'red';
-			icon = WHITE_ICON;
-		}
-	});
-
-	return {
-	    dynamic: function(){
-			return {
-				text: timerText,
-				icon: icon,
-				color: color,
-				refresh: 10
-			}
-	    }
-	};
-}
 
 TrelloPowerUp.initialize({
 	'board-buttons': function(t, options) {
@@ -48,22 +21,5 @@ TrelloPowerUp.initialize({
 			text: "Time Statistics",
 			callback: boardButtonCallback
 		}];
-	},
-	'card-buttons': function(t, options) {
-		return [{
-			icon: GRAY_ICON,
-			text: "Time Tracker",
-			callback: cardButtonCallback
-		}];
-	},
-	'card-badges': function(t, card) {
-		return getBadge(t);
-	},
-	'show-settings': function(t, options){
-		return t.popup({
-			title: 'Settings',
-			url: './settings.html',
-			height: 184
-		});
 	}
 });
