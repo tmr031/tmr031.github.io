@@ -9,11 +9,9 @@ and open the template in the editor.
         <title>Jquery plugin for family tree</title>
         <style>
         /* General button style (reset) */
-            #content{
-               background: white;
-  padding: 24px;
+            body{
+               
   width: 80%;
-  max-width: 600px;
   max-height: 90%;
             }
         .btn {
@@ -80,13 +78,11 @@ and open the template in the editor.
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <div id="content">
 
             <input type="button" id="sendData" class ="btn btn-1 btn-1c"value="send data" onclick="$.send_Family({url: 'save_family.php'})"/>
             <div id="pk-family-tree">
 
             </div>
-        </div>
         <script>
             $('#pk-family-tree').pk_family();
           /*  $('#pk-family-tree').pk_family_create(
