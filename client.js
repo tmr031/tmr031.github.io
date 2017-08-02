@@ -6,7 +6,7 @@ var Promise = TrelloPowerUp.Promise;
 var boardButtonCallback = function(t){
   return t.popup({
     title: "Time Statistics",
-    url: './mindmap.html',
+    url: 'mindmap.html',
     height: 700
   });
 };
