@@ -12,6 +12,13 @@ var boardButtonCallback = function(t){
   });
 };
 
+var cardButtonCallback = function(t){
+  return t.popup({
+    title: "Time Tracker",
+    url: './mindmap.html',
+    height: 300
+  });
+};
 
 
 
@@ -21,6 +28,13 @@ TrelloPowerUp.initialize({
 			icon: WHITE_ICON,
 			text: "Time Statistics",
 			callback: boardButtonCallback
+		}];
+	},
+	'card-buttons': function(t, options) {
+		return [{
+			icon: WHITE_ICON,
+			text: "Mind Map",
+			callback: cardButtonCallback
 		}];
 	}
 });
