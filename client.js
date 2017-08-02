@@ -7,6 +7,7 @@ var boardButtonCallback = function(t){
   return t.popup({
     title: "Time Statistics",
     url: './mindmap.html',
+	  width:700,
     height: 700
   });
 };
