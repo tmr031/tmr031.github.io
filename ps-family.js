@@ -25,7 +25,12 @@ t.render(function(){
     .done();
   })
 });
-
+// close overlay if user clicks outside our content
+document.addEventListener('click', function(e) {
+  if(e.target.tagName == 'BODY') {
+    t.closeOverlay().done();
+  }
+});
 (function($) {
     var rootDiv = '';
     var treeGround = null;
