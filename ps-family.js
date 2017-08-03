@@ -9,15 +9,15 @@ var t = TrelloPowerUp.iframe();
 
 // Returns width of HTML document
 
-$('#boxclose').click(function(){
-	t.closeOverlay();
-});
+
 
 /* timer setup */
 
 t.render(function(){
   return Promise.all([
-    
+    $('#boxclose').click(function(){
+	t.closeOverlay();
+	});
   ])
   .spread(function(boardTimeTotal, rate){
 
