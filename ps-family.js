@@ -23,7 +23,7 @@ t.render(function(){
 
   })
   .then(function(){
-    t.sizeTo('#content')
+    return t.sizeTo('#content')
     .done();
   })
 });
