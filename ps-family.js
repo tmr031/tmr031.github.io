@@ -6,6 +6,9 @@
 /* global TrelloPowerUp */
 var Promise = TrelloPowerUp.Promise;
 var t = TrelloPowerUp.iframe();
+$( document ).width(700);
+ $( document ).height(700);
+// Returns width of HTML document
 
 
 
