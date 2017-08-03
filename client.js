@@ -11,7 +11,7 @@ var cardButtonCallback = function(t){
   });
 };
 var openOverlay = function (t, opts) {
-  return t.overlay({
+  return t.boardBar({
     url: './mindmap.html',
 	  width:600,
 	  height:700,
