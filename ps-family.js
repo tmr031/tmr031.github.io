@@ -30,7 +30,7 @@ t.render(function(){
   })
 });
 document.addEventListener('click', function(e) {
-   if(e.target.tagName == 'BODY') {
+   if(e.target.tagName == 'BUTTON') {
      t.closeOverlay().done();
    }
  });
