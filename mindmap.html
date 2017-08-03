@@ -12,7 +12,12 @@ and open the template in the editor.
             body{
              height:500px;
               }
-         
+         #content{
+             overflow:scroll;
+             height:550px;
+             
+             
+            }
             a.boxclose{
     float:right;
     margin-top:0px;
@@ -94,10 +99,11 @@ and open the template in the editor.
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <div id="content">
             <a class="boxclose" id="boxclose"></a>
             <input type="button" id="sendData" class ="btn btn-1 btn-1c"value="Save-Data" onclick="$.send_Family({url: 'save_family.php'})"/>
             <div id="pk-family-tree">
-
+            </div>
         </div>
         <script>
             $('#pk-family-tree').pk_family();
