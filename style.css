@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 body{
     
- background:transparent;   
+  background-color: #4C8DFF;
 }
 #pk-memberForm {
     background: url("images/back.png") repeat;
