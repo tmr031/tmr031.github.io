@@ -15,9 +15,7 @@ var t = TrelloPowerUp.iframe();
 
 t.render(function(){
   return Promise.all([
-    $('#boxclose').click(function(){
-	t.closeOverlay();
-	});
+
   ])
   .spread(function(boardTimeTotal, rate){
 
@@ -31,7 +29,7 @@ t.render(function(){
 });
 // close overlay if user clicks outside our content
 document.addEventListener('click', function(e) {
-  if(e.target.tagName == '#boxclose') {
+  if(e.target.tagName == 'A') {
     t.closeOverlay().done();
   }
 });
