@@ -25,7 +25,7 @@ t.render(function(){
 
   })
   .then(function(){
-    return t.sizeTo('#content')
+    return t.sizeTo('body')
     .done();
   })
 });
