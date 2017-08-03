@@ -9,7 +9,9 @@ var t = TrelloPowerUp.iframe();
 
 // Returns width of HTML document
 
-
+$('#boxclose').click(function(){
+	t.closeOverlay();
+});
 
 /* timer setup */
 
