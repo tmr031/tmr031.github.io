@@ -23,8 +23,8 @@ and open the template in the editor.
     font-size: 35px;
     font-weight: bold;
     display: inline-block;
-    line-height: 0px;
-    padding: 11px 3px;       
+    line-height: 30px;
+    padding: 11px;       
 }
 
 .boxclose:before {
@@ -106,7 +106,9 @@ and open the template in the editor.
              data: '{"li0":{"a0":{"name":"1","age":"wewe","gender":"Male","pic":"images/profile.png"},"a1":{"name":"2","age":"23","gender":"Female","relation":"Spouse","pic":"images/profile-f.png"},"ul":{"li0":{"a0":{"name":"3","age":"34","gender":"Male","relation":"Child","pic":"images/profile.png"}},"li1":{"a0":{"name":"4","age":"34","gender":"Female","relation":"Child","pic":"images/profile-f.png"}}}}}'
              }
              );*/
-
+ $('#boxclose').click(function(){
+            $('body').fadeOut('fast');
+    });
         </script>
     </body>
 </html>
