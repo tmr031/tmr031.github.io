@@ -8,9 +8,8 @@ and open the template in the editor.
     Author     : poornendra
 */
 body{
-
-
-  background-color: #4C8DFF;
+    
+ background:transparent;   
 }
 #pk-memberForm {
     background: url("images/back.png") repeat;
