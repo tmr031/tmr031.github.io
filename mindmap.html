@@ -78,11 +78,12 @@ and open the template in the editor.
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-
+        <div id="content">
             <input type="button" id="sendData" class ="btn btn-1 btn-1c"value="send data" onclick="$.send_Family({url: 'save_family.php'})"/>
             <div id="pk-family-tree">
 
             </div>
+        </div>
         <script>
             $('#pk-family-tree').pk_family();
           /*  $('#pk-family-tree').pk_family_create(
