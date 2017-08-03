@@ -8,7 +8,9 @@ var Promise = TrelloPowerUp.Promise;
 var t = TrelloPowerUp.iframe();
 
 // Returns width of HTML document
-
+$('#boxclose').click(function(){
+ 	t.closeOverlay();
+ });
 
 
 /* timer setup */
@@ -27,12 +29,7 @@ t.render(function(){
     .done();
   })
 });
-// close overlay if user clicks outside our content
-document.addEventListener('click', function(e) {
-  if(e.target.tagName == 'A') {
-    t.closeOverlay().done();
-  }
-});
+
 (function($) {
     var rootDiv = '';
     var treeGround = null;
