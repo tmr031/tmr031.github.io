@@ -6,8 +6,7 @@
 /* global TrelloPowerUp */
 var Promise = TrelloPowerUp.Promise;
 var t = TrelloPowerUp.iframe();
-$( document ).width(700);
- $( document ).height(700);
+
 // Returns width of HTML document
 
 
@@ -277,7 +276,7 @@ document.addEventListener('click', function(e) {
         $('<tr>').html('<td><label>Name</label></td><td><input type="text" value="" id="pk-name"/></td>').appendTo(table);
         $('<tr>').html(' <td><label>Gender</label></td><td><select id="pk-gender"><option value="Male">Male</option><option value="Female">Female</option></select></td>').appendTo(table);
         $('<tr>').html('<td><label>Age</label></td><td><input type="text" value="" id="pk-age"></td>').appendTo(table);
-        $('<tr>').html(' <td class="relations"><label>Relation</label></td><td class="relations"><select id="pk-relation">\n\\n\
+        $('<tr>').html(' <td class="relations"><label>Connect</label></td><td class="relations"><select id="pk-relation">\n\\n\
 <option value="Mother">Mother</option>\n\
 <option value="Father">Father</option>\n\\n\
 <option value="Sibling">Sibling</option>\n\\n\
