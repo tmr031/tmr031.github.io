@@ -4,10 +4,10 @@ var GRAY_ICON = './images/icon-gray.svg';
 var Promise = TrelloPowerUp.Promise;
 
 var cardButtonCallback = function(t){
-  return t.overlay({
+  return t.boardBar({
     title: "Time Tracker",
     url: './mindmap.html',
-    height: 300
+    height: 700
   });
 };
 var openOverlay = function (t, opts) {
