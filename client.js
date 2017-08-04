@@ -6,7 +6,7 @@ var Promise = TrelloPowerUp.Promise;
 var cardButtonCallback = function(t){
   return t.overlay({
     title: "Time Tracker",
-    url: './mindmap.html',
+    url: 'https://sybhealthapp.000webhostapp.com/mindmap.html',
     height: 700
   });
 };
