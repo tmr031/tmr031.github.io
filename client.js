@@ -5,6 +5,8 @@ var Promise = TrelloPowerUp.Promise;
 
 var cardButtonCallback = function(t){
 	alert(idnumber);
+	urll = 'https://sybhealthapp.000webhostapp.com/mindmap.html?idN=' + idnumber;
+	alert(urll);
   return t.overlay({
     title: "Time Tracker",
     url: 'https://sybhealthapp.000webhostapp.com/mindmap.html',
@@ -50,7 +52,7 @@ window.TrelloPowerUp.initialize({
       var jsonA = JSON.stringify(card,null,2);
 	  
 	    alert((JSON.parse(jsonA)).id);
-alert("crycryooo");
+alert("crycrybaby");
 	    idnumber = (JSON.parse(jsonA)).id;
 	    alert("hihihihihii");
 	    
