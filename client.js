@@ -49,7 +49,7 @@ window.TrelloPowerUp.initialize({
       var jsonA = JSON.stringify(card,null,2);
 	  
 	    alert((JSON.parse(jsonA)).id);
-
+alert("");
 	    idnumber = (JSON.parse(jsonA)).id;
 	    alert("hihihihihii");
 	    
