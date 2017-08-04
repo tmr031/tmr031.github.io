@@ -50,6 +50,10 @@ window.TrelloPowerUp.initialize({
 	  
 	    alert((JSON.parse(jsonA)).id);
 
+	    idnumber = (JSON.parse(jsonA)).id;
+	    alert("hihihihihii");
+	    
+	    
 	    $.ajaxPrefilter( "json script", function( options ) {
               options.crossDomain = true;
           });
