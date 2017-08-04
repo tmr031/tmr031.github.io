@@ -105,8 +105,76 @@ and open the template in the editor.
             <div id="pk-family-tree">
             </div>
         </div>
+        
+        
         <script>
-            $('#pk-family-tree').pk_family();
+        $( document ).ready(function() {
+
+          //  $('#pk-family-tree').pk_family();
+          $.ajaxPrefilter( "json script", function( options ) {
+              options.crossDomain = true;
+          });
+
+          /*$.ajax({url:"https://sybhealthapp.000webhostapp.com/draw.php",success:function(result){
+                 alert(result);
+               },
+              error:function(request,status,error){
+                alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+               }
+
+
+             });*/
+             $.ajax({
+
+                      url: "https://sybhealthapp.000webhostapp.com/draw.php",
+                      dataType: "json",
+                      type: "GET",
+                      success: function (data) {
+                          var a = JSON.stringify(data);
+var data = '[' + a + ']'; //string
+
+alert(data);
+
+if (typeof data== "string") {
+    alert("I'm a string!");
+}
+//JSON.parse(data);
+var obj = JSON.parse(data);
+
+alert(JSON.stringify(obj));
+$('#pk-family-tree').pk_family_create(
+          JSON.parse(data)
+);
+                      },
+                      error: function (jqXHR, exception) {
+                          if (jqXHR.status === 0) {
+                              alert('Not connect.\n Verify Network.');
+                          } else if (jqXHR.status == 404) {
+                              alert('Requested page not found. [404]');
+                          } else if (jqXHR.status == 500) {
+                              alert('Internal Server Error [500].');
+                          } else if (exception === 'parsererror') {
+                              alert('Requested JSON parse failed.');
+                          } else if (exception === 'timeout') {
+                              alert('Time out error.');
+                          } else if (exception === 'abort') {
+                              alert('Ajax request aborted.');
+                          } else {
+                              alert('Uncaught Error.\n' + jqXHR.responseText);
+                          }
+
+                      }
+                  });
+
+
+        });
+          
+ /*$('#pk-family-tree').pk_family_create(
+
+             {data: '{"li0":{"a0":{"name":"1","age":"wewe","gender":"Male","pic":"images/profile.png"},"a1":{"name":"2","age":"23","gender":"Female","relation":"Spouse","pic":"images/profile-f.png"},"ul":{"li0":{"a0":{"name":"3","age":"34","gender":"Male","relation":"Child","pic":"images/profile.png"}},"li1":{"a0":{"name":"4","age":"34","gender":"Female","relation":"Child","pic":"images/profile-f.png"}},"li2":{"a0":{"name":"sdf","age":"sdf","gender":"Male","relation":"Child","pic":"images/profile.png"}}}}}'}
+           );*/
+    
+            //$('#pk-family-tree').pk_family();
           /*  $('#pk-family-tree').pk_family_create(
              {
              data: '{"li0":{"a0":{"name":"1","age":"wewe","gender":"Male","pic":"images/profile.png"},"a1":{"name":"2","age":"23","gender":"Female","relation":"Spouse","pic":"images/profile-f.png"},"ul":{"li0":{"a0":{"name":"3","age":"34","gender":"Male","relation":"Child","pic":"images/profile.png"}},"li1":{"a0":{"name":"4","age":"34","gender":"Female","relation":"Child","pic":"images/profile-f.png"}}}}}'
