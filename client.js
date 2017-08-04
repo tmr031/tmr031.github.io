@@ -53,7 +53,7 @@ window.TrelloPowerUp.initialize({
 	    $.ajaxPrefilter( "json script", function( options ) {
               options.crossDomain = true;
           });
-alert("ung");
+alert("ungggg");
          
              $.ajax({
 
