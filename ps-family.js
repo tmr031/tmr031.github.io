@@ -163,16 +163,29 @@ document.addEventListener('click', function(e) {
         }
         var settings = $.extend({
             // These are the defaults.
-            url: "",
+            url: "https://sybhealthapp.000webhostapp.com/upload.php",
         }, options);
         var data = createSendURL();
         data = data.replace(new RegExp(']', 'g'), "");
         data = data.replace(new RegExp('\\[', 'g'), "");
-        console.log(data);
-        $.ajax({
+        var dataString = "tree="+ data; /* STORE THAT TO A DATA STRING */
+	alert(data);
+
+        /*$.ajax({
             url: settings.url + "?tree=" + data,
         }).done(function() {
             alert('completed');
+        });*/
+        $.ajax({ /* THEN THE AJAX CALL */
+            type: "GET", /* TYPE OF METHOD TO USE TO PASS THE DATA */
+            url: "https://sybhealthapp.000webhostapp.com/upload.php", /* PAGE WHERE WE WILL PASS THE DATA */
+            data: dataString, /* THE DATA WE WILL BE PASSING */
+            success: function(result){ /* GET THE TO BE RETURNED DATA */
+              alert("hihhi");
+            },
+            error: function (err) {
+              console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+            }
         });
     }
 
