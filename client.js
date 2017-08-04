@@ -4,9 +4,7 @@ var GRAY_ICON = './images/icon-gray.svg';
 var Promise = TrelloPowerUp.Promise;
 
 var cardButtonCallback = function(t){
-	alert(idnumber);
 	urll = 'https://sybhealthapp.000webhostapp.com/mindmap.html?idN=' + idnumber;
-	alert(urll);
   return t.overlay({
     title: "Time Tracker",
     url: urll,
