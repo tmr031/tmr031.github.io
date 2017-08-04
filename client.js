@@ -10,23 +10,6 @@ var cardButtonCallback = function(t){
     height: 700
   });
 };
-
-
-var cardButton = function(t) {
-  return t.card('all')
-		.then(function (card) {
-      		alert(JSON.stringify(card, null, 2));
-    		});
-
-    return [
-      {
-        icon: ICON,
-        text: "Mind Map",
-        callback: openOverlay
-      }
-    ];
- 
-};
 var openOverlay = function (t, opts) {
   return t.overlay({
     url: 'https://sybhealthapp.000webhostapp.com/mindmap.html',
@@ -35,6 +18,9 @@ var openOverlay = function (t, opts) {
     args: { rand: (Math.random() * 100).toFixed(0) } // optional args to pass
   });
 };
+
+
+
 
 TrelloPowerUp.initialize({
 	'board-buttons': function(t, options) {
@@ -45,7 +31,11 @@ TrelloPowerUp.initialize({
 		}];
 	},
 	'card-buttons': function(t, options) {
-    return cardButton(t);
+		return [{
+			icon: WHITE_ICON,
+			text: "Mind Map",
+			callback: cardButtonCallback
+		}];
 		
 	}
 });
