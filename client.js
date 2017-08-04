@@ -43,7 +43,9 @@ window.TrelloPowerUp.initialize({
   'card-buttons': function (t, opts) {
     return t.card('id')
     .then(function (card) {
-      alert(JSON.stringify(card, null, 2));
+var temp = card[0]['id'];
+      alert(JSON.stringify(temp));
+      //alert(JSON.stringify(card, null, 2));
     });
   }
 });
