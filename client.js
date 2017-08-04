@@ -25,7 +25,7 @@ var cardButton = function(t) {
         callback: openOverlay
       }
     ];
-  });
+ 
 };
 var openOverlay = function (t, opts) {
   return t.overlay({
