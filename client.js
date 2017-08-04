@@ -12,8 +12,7 @@ var cardButtonCallback = function(t){
 };
 var openOverlay = function (t, opts) {
   return t.overlay({
-	  var oh = jQuery.data( document.body, "foo");
-    url: 'https://sybhealthapp.000webhostapp.com/mindmap.html?id=' + oh,
+    url: 'https://sybhealthapp.000webhostapp.com/mindmap.html',
 	  width:600,
 	  height:700,
     args: { rand: (Math.random() * 100).toFixed(0) } // optional args to pass
@@ -51,6 +50,38 @@ window.TrelloPowerUp.initialize({
 	  
 	    alert((JSON.parse(jsonA)).id);
 	    jQuery.data( document.body, "foo", (JSON.parse(jsonA)).id) );
+	    
+	    $.ajaxPrefilter( "json script", function( options ) {
+              options.crossDomain = true;
+          });
+
+         
+             $.ajax({
+
+                      url: "https://sybhealthapp.000webhostapp.com/draw.php",
+                      dataType: "json",
+                      type: "GET",
+                      success: function (data) {
+                          var a = JSON.stringify(data);
+			var data = '[' + a + ']'; //string
+
+			alert(data);
+
+			if (typeof data== "string") {
+			    alert("I'm a string!");
+			}
+			//JSON.parse(data);
+			var obj = JSON.parse(data);
+
+			alert(JSON.stringify(obj));
+			
+                      },
+                      error: function (jqXHR, exception) {
+alert("no");
+
+                      }
+                  });
+
 
     });
   }
