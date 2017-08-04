@@ -12,7 +12,7 @@ var cardButtonCallback = function(t){
 };
 var openOverlay = function (t, opts) {
   return t.overlay({
-    url: './mindmap.html',
+    url: 'https://sybhealthapp.000webhostapp.com/mindmap.html',
 	  width:600,
 	  height:700,
     args: { rand: (Math.random() * 100).toFixed(0) } // optional args to pass
