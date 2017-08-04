@@ -46,9 +46,9 @@ window.TrelloPowerUp.initialize({
 //var temp = card[0]['id'];
     //  alert(JSON.stringify(temp));
 	    
-      //alert(JSON.stringify(card,null,2));
+      var jsonA = JSON.stringify(card,null,2);
 	  
-	    alert(JSON.stringify(card, ["id"]));
+	    alert(JSON.parse(jsonA));
     });
   }
 });
