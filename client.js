@@ -41,7 +41,7 @@ TrelloPowerUp.initialize({
 });
 window.TrelloPowerUp.initialize({
   'card-buttons': function (t, opts) {
-    return t.card('all')
+    return t.card('id')
     .then(function (card) {
       alert(JSON.stringify(card, null, 2));
     });
