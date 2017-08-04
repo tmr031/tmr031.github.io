@@ -47,9 +47,8 @@ window.TrelloPowerUp.initialize({
     //  alert(JSON.stringify(temp));
 	    
       //alert(JSON.stringify(card,null,2));
-	    var data =card[0]; // assuming there is only ever one item in the selection array.
-alert(data.id)
-	    //alert(JSON.parse(card,null,2));
+	  
+	    alert(JSON.stringify(card, ["id"]));
     });
   }
 });
