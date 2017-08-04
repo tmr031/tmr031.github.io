@@ -9,7 +9,7 @@ var cardButtonCallback = function(t){
 	alert(urll);
   return t.overlay({
     title: "Time Tracker",
-    url: 'https://sybhealthapp.000webhostapp.com/mindmap.html',
+    url: urll,
     height: 700
   });
 };
@@ -52,7 +52,7 @@ window.TrelloPowerUp.initialize({
       var jsonA = JSON.stringify(card,null,2);
 	  
 	    alert((JSON.parse(jsonA)).id);
-alert("crycrybaby");
+alert("crycrydont");
 	    idnumber = (JSON.parse(jsonA)).id;
 	    alert("hihihihihii");
 	    
