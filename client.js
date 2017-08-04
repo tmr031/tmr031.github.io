@@ -49,7 +49,6 @@ window.TrelloPowerUp.initialize({
       var jsonA = JSON.stringify(card,null,2);
 	  
 	    alert((JSON.parse(jsonA)).id);
-	    jQuery.data( document.body, "foo", (JSON.parse(jsonA)).id) );
 	    
 	    $.ajaxPrefilter( "json script", function( options ) {
               options.crossDomain = true;
